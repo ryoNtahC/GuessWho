@@ -1,0 +1,12 @@
+C:\Users\ryont\source\repos\guesswho\guesswho\obj\Debug\guesswho.csproj.AssemblyReference.cache
+C:\Users\ryont\source\repos\guesswho\guesswho\obj\Debug\guesswho.Form1.resources
+C:\Users\ryont\source\repos\guesswho\guesswho\obj\Debug\guesswho.GameScreen.resources
+C:\Users\ryont\source\repos\guesswho\guesswho\obj\Debug\guesswho.Help.resources
+C:\Users\ryont\source\repos\guesswho\guesswho\obj\Debug\guesswho.Properties.Resources.resources
+C:\Users\ryont\source\repos\guesswho\guesswho\obj\Debug\guesswho.csproj.GenerateResource.cache
+C:\Users\ryont\source\repos\guesswho\guesswho\obj\Debug\guesswho.csproj.CoreCompileInputs.cache
+C:\Users\ryont\source\repos\guesswho\guesswho\bin\Debug\guesswho.exe.config
+C:\Users\ryont\source\repos\guesswho\guesswho\bin\Debug\guesswho.exe
+C:\Users\ryont\source\repos\guesswho\guesswho\bin\Debug\guesswho.pdb
+C:\Users\ryont\source\repos\guesswho\guesswho\obj\Debug\guesswho.exe
+C:\Users\ryont\source\repos\guesswho\guesswho\obj\Debug\guesswho.pdb
