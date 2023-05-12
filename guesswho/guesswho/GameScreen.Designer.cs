@@ -40,7 +40,7 @@ namespace guesswho
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(193, 170);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 55);
+            this.label1.Size = new System.Drawing.Size(388, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tu bude hra hoši";
             // 
@@ -50,7 +50,7 @@ namespace guesswho
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(321, 244);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 24);
+            this.label2.Size = new System.Drawing.Size(131, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "in development";
             // 
