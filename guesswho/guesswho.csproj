@@ -87,6 +87,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Choose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose.Designer.cs">
+      <DependentUpon>Choose.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,8 +111,23 @@
     <Compile Include="Help.Designer.cs">
       <DependentUpon>Help.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lgn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lgn.Designer.cs">
+      <DependentUpon>Lgn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rgst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rgst.Designer.cs">
+      <DependentUpon>Rgst.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Choose.resx">
+      <DependentUpon>Choose.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +136,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Help.resx">
       <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lgn.resx">
+      <DependentUpon>Lgn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rgst.resx">
+      <DependentUpon>Rgst.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

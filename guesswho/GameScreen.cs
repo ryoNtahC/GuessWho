@@ -19,14 +19,6 @@ namespace guesswho
             
         }
 
-        private void spat(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form1 menu = new Form1();
-            menu.Closed += (s, args) => this.Close();
-            menu.Show();
-        }
-
         private void hrac1_1_Click(object sender, EventArgs e)
         {
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");

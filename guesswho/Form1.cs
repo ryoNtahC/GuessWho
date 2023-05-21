@@ -28,7 +28,7 @@ namespace guesswho
         private void ZacatHru(object sender, EventArgs e)
         {
             this.Hide();
-            GameScreen hraciaplocha = new GameScreen();
+            Choose hraciaplocha = new Choose();
             hraciaplocha.Closed += (s, args) => this.Close();
             hraciaplocha.Show();
 
