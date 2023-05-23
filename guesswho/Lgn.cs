@@ -34,15 +34,18 @@ namespace guesswho
             connection.Open();
             string loginning = "SELECT * FROM uzivatelia WHERE username= '" + textusername.Text + "' and password= '" + textpassword.Text + "'";
             var cmd = new MySqlCommand(loginning, connection);
-            MySqlDataReader dr = cmd.ExecuteReader();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
 
+            da.Fill(dt);
 
-            if (dr.Read() == true)
+            if(dt.Rows.Count > 0)
             {
                 this.Hide();
                 GameScreen hracka = new GameScreen();
                 hracka.Closed += (s, args) => this.Close();
                 hracka.Show();
+
             }
             else
             {

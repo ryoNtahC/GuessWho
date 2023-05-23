@@ -306,6 +306,7 @@ namespace guesswho
             // 
             // zadaj_vlastnost
             // 
+            this.zadaj_vlastnost.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.zadaj_vlastnost.FormattingEnabled = true;
             this.zadaj_vlastnost.Items.AddRange(new object[] {
             "Pohlavie",
@@ -321,6 +322,7 @@ namespace guesswho
             // 
             // zadaj_otazku
             // 
+            this.zadaj_otazku.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.zadaj_otazku.FormattingEnabled = true;
             this.zadaj_otazku.Location = new System.Drawing.Point(1609, 525);
             this.zadaj_otazku.Name = "zadaj_otazku";
@@ -360,7 +362,9 @@ namespace guesswho
             this.Controls.Add(this.hrac1_20);
             this.Controls.Add(this.hrac1_1);
             this.Name = "GameScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameScreen";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.hrac1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hrac1_20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hrac1_16)).EndInit();
