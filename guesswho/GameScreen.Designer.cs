@@ -88,6 +88,7 @@ namespace guesswho
             this.hrac1_20.Location = new System.Drawing.Point(1292, 524);
             this.hrac1_20.Name = "hrac1_20";
             this.hrac1_20.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_20.TabIndex = 4;
             this.hrac1_20.TabStop = false;
             // 
@@ -96,6 +97,7 @@ namespace guesswho
             this.hrac1_16.Location = new System.Drawing.Point(268, 524);
             this.hrac1_16.Name = "hrac1_16";
             this.hrac1_16.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_16.TabIndex = 5;
             this.hrac1_16.TabStop = false;
             // 
@@ -104,6 +106,7 @@ namespace guesswho
             this.hrac1_8.Location = new System.Drawing.Point(12, 268);
             this.hrac1_8.Name = "hrac1_8";
             this.hrac1_8.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_8.TabIndex = 6;
             this.hrac1_8.TabStop = false;
             // 
@@ -112,6 +115,7 @@ namespace guesswho
             this.hrac1_15.Location = new System.Drawing.Point(12, 524);
             this.hrac1_15.Name = "hrac1_15";
             this.hrac1_15.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_15.TabIndex = 7;
             this.hrac1_15.TabStop = false;
             // 
@@ -120,6 +124,7 @@ namespace guesswho
             this.hrac1_6.Location = new System.Drawing.Point(1292, 12);
             this.hrac1_6.Name = "hrac1_6";
             this.hrac1_6.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_6.TabIndex = 8;
             this.hrac1_6.TabStop = false;
             // 
@@ -128,6 +133,7 @@ namespace guesswho
             this.hrac1_12.Location = new System.Drawing.Point(1036, 268);
             this.hrac1_12.Name = "hrac1_12";
             this.hrac1_12.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_12.TabIndex = 9;
             this.hrac1_12.TabStop = false;
             // 
@@ -136,6 +142,7 @@ namespace guesswho
             this.hrac1_7.Location = new System.Drawing.Point(1548, 12);
             this.hrac1_7.Name = "hrac1_7";
             this.hrac1_7.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_7.TabIndex = 10;
             this.hrac1_7.TabStop = false;
             // 
@@ -144,6 +151,7 @@ namespace guesswho
             this.hrac1_13.Location = new System.Drawing.Point(1292, 268);
             this.hrac1_13.Name = "hrac1_13";
             this.hrac1_13.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_13.TabIndex = 11;
             this.hrac1_13.TabStop = false;
             // 
@@ -152,6 +160,7 @@ namespace guesswho
             this.hrac1_4.Location = new System.Drawing.Point(780, 12);
             this.hrac1_4.Name = "hrac1_4";
             this.hrac1_4.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_4.TabIndex = 12;
             this.hrac1_4.TabStop = false;
             // 
@@ -160,6 +169,7 @@ namespace guesswho
             this.hrac1_21.Location = new System.Drawing.Point(1548, 524);
             this.hrac1_21.Name = "hrac1_21";
             this.hrac1_21.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_21.TabIndex = 13;
             this.hrac1_21.TabStop = false;
             // 
@@ -168,6 +178,7 @@ namespace guesswho
             this.hrac1_5.Location = new System.Drawing.Point(1036, 12);
             this.hrac1_5.Name = "hrac1_5";
             this.hrac1_5.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_5.TabIndex = 14;
             this.hrac1_5.TabStop = false;
             // 
@@ -176,6 +187,7 @@ namespace guesswho
             this.hrac1_18.Location = new System.Drawing.Point(780, 524);
             this.hrac1_18.Name = "hrac1_18";
             this.hrac1_18.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_18.TabIndex = 15;
             this.hrac1_18.TabStop = false;
             // 
@@ -184,6 +196,7 @@ namespace guesswho
             this.hrac1_19.Location = new System.Drawing.Point(1036, 524);
             this.hrac1_19.Name = "hrac1_19";
             this.hrac1_19.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_19.TabIndex = 16;
             this.hrac1_19.TabStop = false;
             // 
@@ -192,6 +205,7 @@ namespace guesswho
             this.hrac1_2.Location = new System.Drawing.Point(268, 12);
             this.hrac1_2.Name = "hrac1_2";
             this.hrac1_2.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_2.TabIndex = 17;
             this.hrac1_2.TabStop = false;
             // 
@@ -200,6 +214,7 @@ namespace guesswho
             this.hrac1_3.Location = new System.Drawing.Point(524, 12);
             this.hrac1_3.Name = "hrac1_3";
             this.hrac1_3.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_3.TabIndex = 18;
             this.hrac1_3.TabStop = false;
             // 
@@ -208,6 +223,7 @@ namespace guesswho
             this.hrac1_14.Location = new System.Drawing.Point(1548, 268);
             this.hrac1_14.Name = "hrac1_14";
             this.hrac1_14.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_14.TabIndex = 19;
             this.hrac1_14.TabStop = false;
             // 
@@ -216,6 +232,7 @@ namespace guesswho
             this.hrac1_9.Location = new System.Drawing.Point(268, 268);
             this.hrac1_9.Name = "hrac1_9";
             this.hrac1_9.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_9.TabIndex = 22;
             this.hrac1_9.TabStop = false;
             // 
@@ -224,6 +241,7 @@ namespace guesswho
             this.hrac1_11.Location = new System.Drawing.Point(780, 268);
             this.hrac1_11.Name = "hrac1_11";
             this.hrac1_11.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_11.TabIndex = 23;
             this.hrac1_11.TabStop = false;
             // 
@@ -232,6 +250,7 @@ namespace guesswho
             this.hrac1_10.Location = new System.Drawing.Point(524, 268);
             this.hrac1_10.Name = "hrac1_10";
             this.hrac1_10.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_10.TabIndex = 24;
             this.hrac1_10.TabStop = false;
             // 
@@ -240,6 +259,7 @@ namespace guesswho
             this.hrac1_17.Location = new System.Drawing.Point(524, 524);
             this.hrac1_17.Name = "hrac1_17";
             this.hrac1_17.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_17.TabIndex = 25;
             this.hrac1_17.TabStop = false;
             // 
