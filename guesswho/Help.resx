@@ -118,15 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>Každý hráč si vyberie jednu kartu aby ju protihráč nevidel. 
+    <value>Každý hráč dostane jednu kartu aby ju protihráč nevidel. 
 Táto karta predstavuje osobu, ktorú musí protihráč uhádnuť.
 Následne sa môže začať.
 Hráči sa striedajú v kladení otázok, ktorých cieľom je uhádnuť koho si vybral protihráč. 
-Otázky je potrebné klásť tak, aby bolo možnéodpovedať iba ÁNO alebo NIE.
+Otázky je potrebné klásť tak, aby bolo možné odpovedať iba ÁNO alebo NIE.
 Napríklad:
 ● Hráč 1: Je tvoja osoba muž?
 ● Hráč 2: Áno.
 ● Hráč 1 následne prečiarkne na svojej hracej ploche všetky ženy.
-</value>
+
+Hráči sa striedajú po ťahoch. 1 ťah môže trvať maximálne 1m 30s, v unranked je čas na ťah neobmedzený.</value>
   </data>
 </root>

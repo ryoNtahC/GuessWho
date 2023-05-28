@@ -120,8 +120,9 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Klik: Zobrazenie vlastnosí postavy
 Dvojklik: Zakrývanie alebo prečiarknutie postavy ktorú ste vylúčili.
-Cieľ hry: Uhádnuť postavu ktorú má oponent 
-pomocou pýtania sa otázok.
+
+Cieľ hry: 
+Uhádnuť postavu ktorú má oponent pomocou pýtania sa otázok.
 Keď si budete myslieť že viete koho si váš oponent vybral
 tak to napíšte to textového poľa a dajte hádať.
 Ak bol váš tip správny tak ste zvítazili, a ak nie 
