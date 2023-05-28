@@ -117,6 +117,12 @@
     <Compile Include="Lgn.Designer.cs">
       <DependentUpon>Lgn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ovlad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ovlad.Designer.cs">
+      <DependentUpon>Ovlad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Rgst.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lgn.resx">
       <DependentUpon>Lgn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ovlad.resx">
+      <DependentUpon>Ovlad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rgst.resx">
       <DependentUpon>Rgst.cs</DependentUpon>

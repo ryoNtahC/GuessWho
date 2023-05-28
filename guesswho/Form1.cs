@@ -59,5 +59,13 @@ namespace guesswho
             }
 
         }
+
+        private void controls(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ovlad ovladanie = new Ovlad();
+            ovladanie.Closed += (s, args) => this.Close();
+            ovladanie.Show();
+        }
     }
 }

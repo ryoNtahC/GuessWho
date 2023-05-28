@@ -93,3 +93,4 @@ C:\Users\ryont\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Rgst.resour
 C:\Users\lenovo\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Choose.resources
 C:\Users\lenovo\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Lgn.resources
 C:\Users\lenovo\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Rgst.resources
+C:\Users\ryont\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Ovlad.resources
