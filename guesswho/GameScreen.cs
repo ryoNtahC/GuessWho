@@ -59,7 +59,7 @@ namespace guesswho
                 "https://i.ibb.co/BnZMpvZ/matko.png",
                 "https://i.ibb.co/B6zSz0z/valibuk.png",
                 "https://i.ibb.co/yNnSY2Q/kubko.jpg",
-                "https://i.ibb.co/2gSDKXJ/imageedit-1-9147194347.png",
+                "https://i.ibb.co/wSg1Knf/pat-new.png",
                 "https://i.ibb.co/GQV6TN4/mat.jpg",
                 "https://i.ibb.co/pyMKP4C/bob.jpg",
                 "https://i.ibb.co/G2gP4tn/bobek.jpg",

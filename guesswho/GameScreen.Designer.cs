@@ -297,6 +297,7 @@ namespace guesswho
             this.hrac1_22.Location = new System.Drawing.Point(780, 780);
             this.hrac1_22.Name = "hrac1_22";
             this.hrac1_22.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_22.TabIndex = 26;
             this.hrac1_22.TabStop = false;
             this.hrac1_22.DoubleClick += new System.EventHandler(this.hrac1_22_DoubleClick);
@@ -306,6 +307,7 @@ namespace guesswho
             this.hrac1_23.Location = new System.Drawing.Point(1036, 780);
             this.hrac1_23.Name = "hrac1_23";
             this.hrac1_23.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_23.TabIndex = 27;
             this.hrac1_23.TabStop = false;
             this.hrac1_23.DoubleClick += new System.EventHandler(this.hrac1_23_DoubleClick);
@@ -315,6 +317,7 @@ namespace guesswho
             this.hrac1_24.Location = new System.Drawing.Point(1292, 780);
             this.hrac1_24.Name = "hrac1_24";
             this.hrac1_24.Size = new System.Drawing.Size(250, 250);
+            this.hrac1_24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_24.TabIndex = 28;
             this.hrac1_24.TabStop = false;
             this.hrac1_24.DoubleClick += new System.EventHandler(this.hrac1_24_DoubleClick);
