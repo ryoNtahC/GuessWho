@@ -90,7 +90,7 @@ namespace guesswho
             this.hrac1_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_1.TabIndex = 3;
             this.hrac1_1.TabStop = false;
-            this.hrac1_1.Click += new System.EventHandler(this.hrac1_1_Click);
+            this.hrac1_1.DoubleClick += new System.EventHandler(this.hrac1_1_DoubleClick);
             // 
             // hrac1_20
             // 
@@ -100,6 +100,7 @@ namespace guesswho
             this.hrac1_20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_20.TabIndex = 4;
             this.hrac1_20.TabStop = false;
+            this.hrac1_20.DoubleClick += new System.EventHandler(this.hrac1_20_DoubleClick);
             // 
             // hrac1_16
             // 
@@ -109,6 +110,7 @@ namespace guesswho
             this.hrac1_16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_16.TabIndex = 5;
             this.hrac1_16.TabStop = false;
+            this.hrac1_16.DoubleClick += new System.EventHandler(this.hrac1_16_DoubleClick);
             // 
             // hrac1_8
             // 
@@ -118,6 +120,7 @@ namespace guesswho
             this.hrac1_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_8.TabIndex = 6;
             this.hrac1_8.TabStop = false;
+            this.hrac1_8.DoubleClick += new System.EventHandler(this.hrac1_8_DoubleClick);
             // 
             // hrac1_15
             // 
@@ -127,6 +130,7 @@ namespace guesswho
             this.hrac1_15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_15.TabIndex = 7;
             this.hrac1_15.TabStop = false;
+            this.hrac1_15.DoubleClick += new System.EventHandler(this.hrac1_15_DoubleClick);
             // 
             // hrac1_6
             // 
@@ -136,6 +140,7 @@ namespace guesswho
             this.hrac1_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_6.TabIndex = 8;
             this.hrac1_6.TabStop = false;
+            this.hrac1_6.DoubleClick += new System.EventHandler(this.hrac1_6_DoubleClick);
             // 
             // hrac1_12
             // 
@@ -145,6 +150,7 @@ namespace guesswho
             this.hrac1_12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_12.TabIndex = 9;
             this.hrac1_12.TabStop = false;
+            this.hrac1_12.DoubleClick += new System.EventHandler(this.hrac1_12_DoubleClick);
             // 
             // hrac1_7
             // 
@@ -154,6 +160,7 @@ namespace guesswho
             this.hrac1_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_7.TabIndex = 10;
             this.hrac1_7.TabStop = false;
+            this.hrac1_7.DoubleClick += new System.EventHandler(this.hrac1_7_DoubleClick);
             // 
             // hrac1_13
             // 
@@ -163,6 +170,7 @@ namespace guesswho
             this.hrac1_13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_13.TabIndex = 11;
             this.hrac1_13.TabStop = false;
+            this.hrac1_13.DoubleClick += new System.EventHandler(this.hrac1_13_DoubleClick);
             // 
             // hrac1_4
             // 
@@ -172,6 +180,7 @@ namespace guesswho
             this.hrac1_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_4.TabIndex = 12;
             this.hrac1_4.TabStop = false;
+            this.hrac1_4.DoubleClick += new System.EventHandler(this.hrac1_4_DoubleClick);
             // 
             // hrac1_21
             // 
@@ -181,6 +190,7 @@ namespace guesswho
             this.hrac1_21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_21.TabIndex = 13;
             this.hrac1_21.TabStop = false;
+            this.hrac1_21.DoubleClick += new System.EventHandler(this.hrac1_21_DoubleClick);
             // 
             // hrac1_5
             // 
@@ -190,6 +200,7 @@ namespace guesswho
             this.hrac1_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_5.TabIndex = 14;
             this.hrac1_5.TabStop = false;
+            this.hrac1_5.DoubleClick += new System.EventHandler(this.hrac1_5_DoubleClick);
             // 
             // hrac1_18
             // 
@@ -199,6 +210,7 @@ namespace guesswho
             this.hrac1_18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_18.TabIndex = 15;
             this.hrac1_18.TabStop = false;
+            this.hrac1_18.DoubleClick += new System.EventHandler(this.hrac1_18_DoubleClick);
             // 
             // hrac1_19
             // 
@@ -208,6 +220,7 @@ namespace guesswho
             this.hrac1_19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_19.TabIndex = 16;
             this.hrac1_19.TabStop = false;
+            this.hrac1_19.DoubleClick += new System.EventHandler(this.hrac1_19_DoubleClick);
             // 
             // hrac1_2
             // 
@@ -217,6 +230,7 @@ namespace guesswho
             this.hrac1_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_2.TabIndex = 17;
             this.hrac1_2.TabStop = false;
+            this.hrac1_2.DoubleClick += new System.EventHandler(this.hrac1_2_DoubleClick);
             // 
             // hrac1_3
             // 
@@ -226,6 +240,7 @@ namespace guesswho
             this.hrac1_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_3.TabIndex = 18;
             this.hrac1_3.TabStop = false;
+            this.hrac1_3.DoubleClick += new System.EventHandler(this.hrac1_3_DoubleClick);
             // 
             // hrac1_14
             // 
@@ -235,6 +250,7 @@ namespace guesswho
             this.hrac1_14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_14.TabIndex = 19;
             this.hrac1_14.TabStop = false;
+            this.hrac1_14.DoubleClick += new System.EventHandler(this.hrac1_14_DoubleClick);
             // 
             // hrac1_9
             // 
@@ -244,6 +260,7 @@ namespace guesswho
             this.hrac1_9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_9.TabIndex = 22;
             this.hrac1_9.TabStop = false;
+            this.hrac1_9.DoubleClick += new System.EventHandler(this.hrac1_9_DoubleClick);
             // 
             // hrac1_11
             // 
@@ -253,6 +270,7 @@ namespace guesswho
             this.hrac1_11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_11.TabIndex = 23;
             this.hrac1_11.TabStop = false;
+            this.hrac1_11.DoubleClick += new System.EventHandler(this.hrac1_11_DoubleClick);
             // 
             // hrac1_10
             // 
@@ -262,6 +280,7 @@ namespace guesswho
             this.hrac1_10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_10.TabIndex = 24;
             this.hrac1_10.TabStop = false;
+            this.hrac1_10.DoubleClick += new System.EventHandler(this.hrac1_10_DoubleClick);
             // 
             // hrac1_17
             // 
@@ -271,6 +290,7 @@ namespace guesswho
             this.hrac1_17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hrac1_17.TabIndex = 25;
             this.hrac1_17.TabStop = false;
+            this.hrac1_17.DoubleClick += new System.EventHandler(this.hrac1_17_DoubleClick);
             // 
             // hrac1_22
             // 
@@ -279,6 +299,7 @@ namespace guesswho
             this.hrac1_22.Size = new System.Drawing.Size(250, 250);
             this.hrac1_22.TabIndex = 26;
             this.hrac1_22.TabStop = false;
+            this.hrac1_22.DoubleClick += new System.EventHandler(this.hrac1_22_DoubleClick);
             // 
             // hrac1_23
             // 
@@ -287,6 +308,7 @@ namespace guesswho
             this.hrac1_23.Size = new System.Drawing.Size(250, 250);
             this.hrac1_23.TabIndex = 27;
             this.hrac1_23.TabStop = false;
+            this.hrac1_23.DoubleClick += new System.EventHandler(this.hrac1_23_DoubleClick);
             // 
             // hrac1_24
             // 
@@ -295,6 +317,7 @@ namespace guesswho
             this.hrac1_24.Size = new System.Drawing.Size(250, 250);
             this.hrac1_24.TabIndex = 28;
             this.hrac1_24.TabStop = false;
+            this.hrac1_24.DoubleClick += new System.EventHandler(this.hrac1_24_DoubleClick);
             // 
             // vlastnosti
             // 
