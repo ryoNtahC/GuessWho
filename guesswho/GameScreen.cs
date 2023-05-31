@@ -439,5 +439,15 @@ namespace guesswho
                 }
             }
         }
+
+        private void opytat(object sender, EventArgs e)
+        {
+            this.Hide();
+            Qstion pytaj = new Qstion();
+            pytaj.ShowDialog();
+            pytaj = null;
+            this.Show();
+            
+        }
     }
 }

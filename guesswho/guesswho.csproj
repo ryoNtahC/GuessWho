@@ -123,6 +123,12 @@
     <Compile Include="Ovlad.Designer.cs">
       <DependentUpon>Ovlad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Qstion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qstion.Designer.cs">
+      <DependentUpon>Qstion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Rgst.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ovlad.resx">
       <DependentUpon>Ovlad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Qstion.resx">
+      <DependentUpon>Qstion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rgst.resx">
       <DependentUpon>Rgst.cs</DependentUpon>
