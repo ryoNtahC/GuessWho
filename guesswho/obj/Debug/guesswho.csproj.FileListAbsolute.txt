@@ -142,3 +142,8 @@ C:\Users\ryont\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Qstion.reso
 C:\Users\ryont\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Prechod.resources
 C:\Users\ryont\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.GameScreen2.resources
 C:\Users\ryont\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Prechod2.resources
+C:\Users\lenovo\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.GameScreen2.resources
+C:\Users\lenovo\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Ovlad.resources
+C:\Users\lenovo\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Prechod.resources
+C:\Users\lenovo\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Prechod2.resources
+C:\Users\lenovo\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Qstion.resources

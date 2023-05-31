@@ -36,13 +36,19 @@
             this.Back = new System.Windows.Forms.Button();
             this.odpoved = new System.Windows.Forms.Label();
             this.spytaj = new System.Windows.Forms.Button();
+            this.potvrdenie = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // typ_vlastnosti
             // 
             this.typ_vlastnosti.FormattingEnabled = true;
             this.typ_vlastnosti.Items.AddRange(new object[] {
-            "ahoj"});
+            "pohlavie",
+            "vlasy",
+            "oči",
+            "čiapku",
+            "doplnok",
+            "fúzy"});
             this.typ_vlastnosti.Location = new System.Drawing.Point(261, 78);
             this.typ_vlastnosti.Margin = new System.Windows.Forms.Padding(4);
             this.typ_vlastnosti.Name = "typ_vlastnosti";
@@ -67,7 +73,7 @@
             this.otazka.Location = new System.Drawing.Point(223, 217);
             this.otazka.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.otazka.Name = "otazka";
-            this.otazka.Size = new System.Drawing.Size(115, 39);
+            this.otazka.Size = new System.Drawing.Size(109, 38);
             this.otazka.TabIndex = 2;
             this.otazka.Text = "label1";
             this.otazka.Visible = false;
@@ -119,7 +125,7 @@
             // 
             // spytaj
             // 
-            this.spytaj.Location = new System.Drawing.Point(403, 154);
+            this.spytaj.Location = new System.Drawing.Point(403, 197);
             this.spytaj.Margin = new System.Windows.Forms.Padding(4);
             this.spytaj.Name = "spytaj";
             this.spytaj.Size = new System.Drawing.Size(100, 28);
@@ -128,11 +134,22 @@
             this.spytaj.UseVisualStyleBackColor = true;
             this.spytaj.Click += new System.EventHandler(this.spytaj_Click);
             // 
+            // potvrdenie
+            // 
+            this.potvrdenie.Location = new System.Drawing.Point(403, 124);
+            this.potvrdenie.Name = "potvrdenie";
+            this.potvrdenie.Size = new System.Drawing.Size(100, 23);
+            this.potvrdenie.TabIndex = 8;
+            this.potvrdenie.Text = "Potvrdiť typ";
+            this.potvrdenie.UseVisualStyleBackColor = true;
+            this.potvrdenie.Click += new System.EventHandler(this.potvrdenie_Click);
+            // 
             // Qstion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(895, 487);
+            this.Controls.Add(this.potvrdenie);
             this.Controls.Add(this.spytaj);
             this.Controls.Add(this.odpoved);
             this.Controls.Add(this.Back);
@@ -160,5 +177,6 @@
         private System.Windows.Forms.Button Back;
         private System.Windows.Forms.Label odpoved;
         private System.Windows.Forms.Button spytaj;
+        private System.Windows.Forms.Button potvrdenie;
     }
 }

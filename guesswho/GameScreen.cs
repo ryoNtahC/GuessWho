@@ -19,7 +19,9 @@ namespace guesswho
         {
             InitializeComponent();
             nacitanie_obrazkov();
-            
+            int ciselko = new Random().Next(0, 23);
+            tvojhrac.ImageLocation = pandrlaci[ciselko];
+
         }
         string[] pandrlaci =
         {
