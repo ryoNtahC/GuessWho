@@ -13,13 +13,13 @@ using static System.Windows.Forms.LinkLabel;
 
 namespace guesswho
 {
-    public partial class GameScreen : Form
+    public partial class GameScreen2 : Form
     {
-        public GameScreen()
+        public GameScreen2()
         {
             InitializeComponent();
             nacitanie_obrazkov();
-            
+
         }
         string[] pandrlaci =
         {
@@ -447,20 +447,22 @@ namespace guesswho
             pytaj.ShowDialog();
             pytaj = null;
             this.Show();
-            
+
         }
 
         private void ist(object sender, EventArgs e)
         {
-            Prechod prechadzam = Application.OpenForms.OfType<Prechod>().FirstOrDefault();
-            if (prechadzam != null)
+
+
+            Prechod2 prechadzam2 = Application.OpenForms.OfType<Prechod2>().FirstOrDefault();
+            if (prechadzam2 != null)
             {
-                prechadzam.Show();
+                prechadzam2.Show();
             }
             else
             {
-                prechadzam = new Prechod();
-                prechadzam.Show();
+                prechadzam2 = new Prechod2();
+                prechadzam2.Show();
             }
             this.Hide();
         }

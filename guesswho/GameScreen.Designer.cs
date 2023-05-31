@@ -56,6 +56,7 @@ namespace guesswho
             this.vlastnosti = new System.Windows.Forms.RichTextBox();
             this.tvojhrac = new System.Windows.Forms.PictureBox();
             this.otazka = new System.Windows.Forms.Button();
+            this.dalej = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hrac1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hrac1_20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hrac1_16)).BeginInit();
@@ -86,7 +87,7 @@ namespace guesswho
             // hrac1_1
             // 
             this.hrac1_1.Location = new System.Drawing.Point(9, 10);
-            this.hrac1_1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_1.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_1.Name = "hrac1_1";
             this.hrac1_1.Size = new System.Drawing.Size(188, 203);
             this.hrac1_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -97,7 +98,7 @@ namespace guesswho
             // hrac1_20
             // 
             this.hrac1_20.Location = new System.Drawing.Point(201, 634);
-            this.hrac1_20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_20.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_20.Name = "hrac1_20";
             this.hrac1_20.Size = new System.Drawing.Size(188, 203);
             this.hrac1_20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -108,7 +109,7 @@ namespace guesswho
             // hrac1_16
             // 
             this.hrac1_16.Location = new System.Drawing.Point(585, 426);
-            this.hrac1_16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_16.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_16.Name = "hrac1_16";
             this.hrac1_16.Size = new System.Drawing.Size(188, 203);
             this.hrac1_16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -119,7 +120,7 @@ namespace guesswho
             // hrac1_8
             // 
             this.hrac1_8.Location = new System.Drawing.Point(201, 218);
-            this.hrac1_8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_8.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_8.Name = "hrac1_8";
             this.hrac1_8.Size = new System.Drawing.Size(188, 203);
             this.hrac1_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,7 +131,7 @@ namespace guesswho
             // hrac1_15
             // 
             this.hrac1_15.Location = new System.Drawing.Point(393, 426);
-            this.hrac1_15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_15.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_15.Name = "hrac1_15";
             this.hrac1_15.Size = new System.Drawing.Size(188, 203);
             this.hrac1_15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -141,7 +142,7 @@ namespace guesswho
             // hrac1_6
             // 
             this.hrac1_6.Location = new System.Drawing.Point(969, 10);
-            this.hrac1_6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_6.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_6.Name = "hrac1_6";
             this.hrac1_6.Size = new System.Drawing.Size(188, 203);
             this.hrac1_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +153,7 @@ namespace guesswho
             // hrac1_12
             // 
             this.hrac1_12.Location = new System.Drawing.Point(969, 218);
-            this.hrac1_12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_12.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_12.Name = "hrac1_12";
             this.hrac1_12.Size = new System.Drawing.Size(188, 203);
             this.hrac1_12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,7 +164,7 @@ namespace guesswho
             // hrac1_7
             // 
             this.hrac1_7.Location = new System.Drawing.Point(9, 218);
-            this.hrac1_7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_7.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_7.Name = "hrac1_7";
             this.hrac1_7.Size = new System.Drawing.Size(188, 203);
             this.hrac1_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +175,7 @@ namespace guesswho
             // hrac1_13
             // 
             this.hrac1_13.Location = new System.Drawing.Point(9, 426);
-            this.hrac1_13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_13.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_13.Name = "hrac1_13";
             this.hrac1_13.Size = new System.Drawing.Size(188, 203);
             this.hrac1_13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -185,7 +186,7 @@ namespace guesswho
             // hrac1_4
             // 
             this.hrac1_4.Location = new System.Drawing.Point(585, 10);
-            this.hrac1_4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_4.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_4.Name = "hrac1_4";
             this.hrac1_4.Size = new System.Drawing.Size(188, 203);
             this.hrac1_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -196,7 +197,7 @@ namespace guesswho
             // hrac1_21
             // 
             this.hrac1_21.Location = new System.Drawing.Point(393, 634);
-            this.hrac1_21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_21.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_21.Name = "hrac1_21";
             this.hrac1_21.Size = new System.Drawing.Size(188, 203);
             this.hrac1_21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -207,7 +208,7 @@ namespace guesswho
             // hrac1_5
             // 
             this.hrac1_5.Location = new System.Drawing.Point(777, 10);
-            this.hrac1_5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_5.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_5.Name = "hrac1_5";
             this.hrac1_5.Size = new System.Drawing.Size(188, 203);
             this.hrac1_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -218,7 +219,7 @@ namespace guesswho
             // hrac1_18
             // 
             this.hrac1_18.Location = new System.Drawing.Point(969, 426);
-            this.hrac1_18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_18.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_18.Name = "hrac1_18";
             this.hrac1_18.Size = new System.Drawing.Size(188, 203);
             this.hrac1_18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -229,7 +230,7 @@ namespace guesswho
             // hrac1_19
             // 
             this.hrac1_19.Location = new System.Drawing.Point(9, 634);
-            this.hrac1_19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_19.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_19.Name = "hrac1_19";
             this.hrac1_19.Size = new System.Drawing.Size(188, 203);
             this.hrac1_19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -240,7 +241,7 @@ namespace guesswho
             // hrac1_2
             // 
             this.hrac1_2.Location = new System.Drawing.Point(201, 10);
-            this.hrac1_2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_2.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_2.Name = "hrac1_2";
             this.hrac1_2.Size = new System.Drawing.Size(188, 203);
             this.hrac1_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -251,7 +252,7 @@ namespace guesswho
             // hrac1_3
             // 
             this.hrac1_3.Location = new System.Drawing.Point(393, 10);
-            this.hrac1_3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_3.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_3.Name = "hrac1_3";
             this.hrac1_3.Size = new System.Drawing.Size(188, 203);
             this.hrac1_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -262,7 +263,7 @@ namespace guesswho
             // hrac1_14
             // 
             this.hrac1_14.Location = new System.Drawing.Point(201, 426);
-            this.hrac1_14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_14.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_14.Name = "hrac1_14";
             this.hrac1_14.Size = new System.Drawing.Size(188, 203);
             this.hrac1_14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -273,7 +274,7 @@ namespace guesswho
             // hrac1_9
             // 
             this.hrac1_9.Location = new System.Drawing.Point(393, 218);
-            this.hrac1_9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_9.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_9.Name = "hrac1_9";
             this.hrac1_9.Size = new System.Drawing.Size(188, 203);
             this.hrac1_9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -284,7 +285,7 @@ namespace guesswho
             // hrac1_11
             // 
             this.hrac1_11.Location = new System.Drawing.Point(777, 218);
-            this.hrac1_11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_11.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_11.Name = "hrac1_11";
             this.hrac1_11.Size = new System.Drawing.Size(188, 203);
             this.hrac1_11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -295,7 +296,7 @@ namespace guesswho
             // hrac1_10
             // 
             this.hrac1_10.Location = new System.Drawing.Point(585, 218);
-            this.hrac1_10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_10.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_10.Name = "hrac1_10";
             this.hrac1_10.Size = new System.Drawing.Size(188, 203);
             this.hrac1_10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -306,7 +307,7 @@ namespace guesswho
             // hrac1_17
             // 
             this.hrac1_17.Location = new System.Drawing.Point(777, 426);
-            this.hrac1_17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_17.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_17.Name = "hrac1_17";
             this.hrac1_17.Size = new System.Drawing.Size(188, 203);
             this.hrac1_17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -317,7 +318,7 @@ namespace guesswho
             // hrac1_22
             // 
             this.hrac1_22.Location = new System.Drawing.Point(585, 634);
-            this.hrac1_22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_22.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_22.Name = "hrac1_22";
             this.hrac1_22.Size = new System.Drawing.Size(188, 203);
             this.hrac1_22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -328,7 +329,7 @@ namespace guesswho
             // hrac1_23
             // 
             this.hrac1_23.Location = new System.Drawing.Point(777, 634);
-            this.hrac1_23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_23.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_23.Name = "hrac1_23";
             this.hrac1_23.Size = new System.Drawing.Size(188, 203);
             this.hrac1_23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -339,7 +340,7 @@ namespace guesswho
             // hrac1_24
             // 
             this.hrac1_24.Location = new System.Drawing.Point(969, 634);
-            this.hrac1_24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hrac1_24.Margin = new System.Windows.Forms.Padding(2);
             this.hrac1_24.Name = "hrac1_24";
             this.hrac1_24.Size = new System.Drawing.Size(188, 203);
             this.hrac1_24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -350,7 +351,7 @@ namespace guesswho
             // vlastnosti
             // 
             this.vlastnosti.Location = new System.Drawing.Point(1207, 198);
-            this.vlastnosti.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vlastnosti.Margin = new System.Windows.Forms.Padding(2);
             this.vlastnosti.Name = "vlastnosti";
             this.vlastnosti.Size = new System.Drawing.Size(188, 204);
             this.vlastnosti.TabIndex = 29;
@@ -376,11 +377,22 @@ namespace guesswho
             this.otazka.UseVisualStyleBackColor = true;
             this.otazka.Click += new System.EventHandler(this.opytat);
             // 
+            // dalej
+            // 
+            this.dalej.Location = new System.Drawing.Point(1244, 702);
+            this.dalej.Name = "dalej";
+            this.dalej.Size = new System.Drawing.Size(119, 60);
+            this.dalej.TabIndex = 32;
+            this.dalej.Text = "Skončiť kolo";
+            this.dalej.UseVisualStyleBackColor = true;
+            this.dalej.Click += new System.EventHandler(this.ist);
+            // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 857);
+            this.Controls.Add(this.dalej);
             this.Controls.Add(this.otazka);
             this.Controls.Add(this.tvojhrac);
             this.Controls.Add(this.vlastnosti);
@@ -408,7 +420,7 @@ namespace guesswho
             this.Controls.Add(this.hrac1_16);
             this.Controls.Add(this.hrac1_20);
             this.Controls.Add(this.hrac1_1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GameScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameScreen";
@@ -469,5 +481,6 @@ namespace guesswho
         private System.Windows.Forms.RichTextBox vlastnosti;
         private System.Windows.Forms.PictureBox tvojhrac;
         private System.Windows.Forms.Button otazka;
+        private System.Windows.Forms.Button dalej;
     }
 }

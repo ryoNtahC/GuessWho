@@ -139,3 +139,6 @@ C:\Users\z21ite09\Desktop\GuessWho-main\guesswho\obj\Debug\guesswho.exe
 C:\Users\z21ite09\Desktop\GuessWho-main\guesswho\obj\Debug\guesswho.pdb
 C:\Users\z21ite09\Desktop\GuessWho-main\guesswho\obj\Debug\guesswho.Qstion.resources
 C:\Users\ryont\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Qstion.resources
+C:\Users\ryont\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Prechod.resources
+C:\Users\ryont\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.GameScreen2.resources
+C:\Users\ryont\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Prechod2.resources
