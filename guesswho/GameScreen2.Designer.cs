@@ -86,22 +86,28 @@ namespace guesswho
             // 
             // dalej
             // 
+            this.dalej.BackColor = System.Drawing.Color.Red;
+            this.dalej.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dalej.ForeColor = System.Drawing.Color.White;
             this.dalej.Location = new System.Drawing.Point(1254, 707);
             this.dalej.Name = "dalej";
             this.dalej.Size = new System.Drawing.Size(119, 60);
             this.dalej.TabIndex = 60;
             this.dalej.Text = "Skončiť kolo";
-            this.dalej.UseVisualStyleBackColor = true;
+            this.dalej.UseVisualStyleBackColor = false;
             this.dalej.Click += new System.EventHandler(this.ist);
             // 
             // otazka
             // 
+            this.otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.otazka.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.otazka.ForeColor = System.Drawing.Color.White;
             this.otazka.Location = new System.Drawing.Point(1254, 782);
             this.otazka.Name = "otazka";
             this.otazka.Size = new System.Drawing.Size(119, 60);
             this.otazka.TabIndex = 59;
             this.otazka.Text = "Spýtaj sa";
-            this.otazka.UseVisualStyleBackColor = true;
+            this.otazka.UseVisualStyleBackColor = false;
             this.otazka.Click += new System.EventHandler(this.opytat);
             // 
             // tvojhrac
@@ -116,6 +122,7 @@ namespace guesswho
             // 
             // vlastnosti
             // 
+            this.vlastnosti.BackColor = System.Drawing.Color.Gray;
             this.vlastnosti.Location = new System.Drawing.Point(1217, 203);
             this.vlastnosti.Margin = new System.Windows.Forms.Padding(2);
             this.vlastnosti.Name = "vlastnosti";
@@ -391,6 +398,7 @@ namespace guesswho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1424, 857);
             this.Controls.Add(this.dalej);
             this.Controls.Add(this.otazka);

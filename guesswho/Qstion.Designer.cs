@@ -49,10 +49,9 @@
             "čiapku",
             "doplnok",
             "fúzy"});
-            this.typ_vlastnosti.Location = new System.Drawing.Point(261, 78);
-            this.typ_vlastnosti.Margin = new System.Windows.Forms.Padding(4);
+            this.typ_vlastnosti.Location = new System.Drawing.Point(196, 63);
             this.typ_vlastnosti.Name = "typ_vlastnosti";
-            this.typ_vlastnosti.Size = new System.Drawing.Size(160, 24);
+            this.typ_vlastnosti.Size = new System.Drawing.Size(121, 21);
             this.typ_vlastnosti.TabIndex = 0;
             // 
             // vlastnosť
@@ -60,75 +59,77 @@
             this.vlastnosť.FormattingEnabled = true;
             this.vlastnosť.Items.AddRange(new object[] {
             "cus"});
-            this.vlastnosť.Location = new System.Drawing.Point(467, 78);
-            this.vlastnosť.Margin = new System.Windows.Forms.Padding(4);
+            this.vlastnosť.Location = new System.Drawing.Point(350, 63);
             this.vlastnosť.Name = "vlastnosť";
-            this.vlastnosť.Size = new System.Drawing.Size(160, 24);
+            this.vlastnosť.Size = new System.Drawing.Size(121, 21);
             this.vlastnosť.TabIndex = 1;
             // 
             // otazka
             // 
             this.otazka.AutoSize = true;
             this.otazka.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.otazka.Location = new System.Drawing.Point(223, 217);
-            this.otazka.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.otazka.Location = new System.Drawing.Point(167, 176);
             this.otazka.Name = "otazka";
-            this.otazka.Size = new System.Drawing.Size(109, 38);
+            this.otazka.Size = new System.Drawing.Size(92, 31);
             this.otazka.TabIndex = 2;
             this.otazka.Text = "label1";
             this.otazka.Visible = false;
             // 
             // ano
             // 
-            this.ano.Location = new System.Drawing.Point(261, 303);
-            this.ano.Margin = new System.Windows.Forms.Padding(4);
+            this.ano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ano.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ano.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ano.Location = new System.Drawing.Point(196, 236);
             this.ano.Name = "ano";
-            this.ano.Size = new System.Drawing.Size(100, 28);
+            this.ano.Size = new System.Drawing.Size(75, 33);
             this.ano.TabIndex = 3;
             this.ano.Text = "Áno";
-            this.ano.UseVisualStyleBackColor = true;
+            this.ano.UseVisualStyleBackColor = false;
             this.ano.Click += new System.EventHandler(this.ano_Click);
             // 
             // nie
             // 
-            this.nie.Location = new System.Drawing.Point(528, 303);
-            this.nie.Margin = new System.Windows.Forms.Padding(4);
+            this.nie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.nie.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nie.ForeColor = System.Drawing.Color.White;
+            this.nie.Location = new System.Drawing.Point(396, 236);
             this.nie.Name = "nie";
-            this.nie.Size = new System.Drawing.Size(100, 28);
+            this.nie.Size = new System.Drawing.Size(75, 33);
             this.nie.TabIndex = 4;
             this.nie.Text = "Nie";
-            this.nie.UseVisualStyleBackColor = true;
+            this.nie.UseVisualStyleBackColor = false;
             this.nie.Click += new System.EventHandler(this.nie_Click);
             // 
             // Back
             // 
-            this.Back.Location = new System.Drawing.Point(16, 444);
-            this.Back.Margin = new System.Windows.Forms.Padding(4);
+            this.Back.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Back.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Back.ForeColor = System.Drawing.Color.White;
+            this.Back.Location = new System.Drawing.Point(12, 357);
             this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(100, 28);
+            this.Back.Size = new System.Drawing.Size(75, 27);
             this.Back.TabIndex = 5;
             this.Back.Text = "Back";
-            this.Back.UseVisualStyleBackColor = true;
+            this.Back.UseVisualStyleBackColor = false;
             this.Back.Click += new System.EventHandler(this.spat);
             // 
             // odpoved
             // 
             this.odpoved.AutoSize = true;
             this.odpoved.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.odpoved.Location = new System.Drawing.Point(388, 367);
-            this.odpoved.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.odpoved.Location = new System.Drawing.Point(291, 298);
             this.odpoved.Name = "odpoved";
-            this.odpoved.Size = new System.Drawing.Size(115, 39);
+            this.odpoved.Size = new System.Drawing.Size(92, 31);
             this.odpoved.TabIndex = 6;
             this.odpoved.Text = "label2";
             this.odpoved.Visible = false;
             // 
             // spytaj
             // 
-            this.spytaj.Location = new System.Drawing.Point(403, 197);
-            this.spytaj.Margin = new System.Windows.Forms.Padding(4);
+            this.spytaj.Location = new System.Drawing.Point(302, 160);
             this.spytaj.Name = "spytaj";
-            this.spytaj.Size = new System.Drawing.Size(100, 28);
+            this.spytaj.Size = new System.Drawing.Size(75, 23);
             this.spytaj.TabIndex = 7;
             this.spytaj.Text = "Spýtať sa";
             this.spytaj.UseVisualStyleBackColor = true;
@@ -136,9 +137,10 @@
             // 
             // potvrdenie
             // 
-            this.potvrdenie.Location = new System.Drawing.Point(403, 124);
+            this.potvrdenie.Location = new System.Drawing.Point(302, 101);
+            this.potvrdenie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.potvrdenie.Name = "potvrdenie";
-            this.potvrdenie.Size = new System.Drawing.Size(100, 23);
+            this.potvrdenie.Size = new System.Drawing.Size(75, 19);
             this.potvrdenie.TabIndex = 8;
             this.potvrdenie.Text = "Potvrdiť typ";
             this.potvrdenie.UseVisualStyleBackColor = true;
@@ -146,9 +148,10 @@
             // 
             // Qstion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(895, 487);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(671, 396);
             this.Controls.Add(this.potvrdenie);
             this.Controls.Add(this.spytaj);
             this.Controls.Add(this.odpoved);
@@ -158,7 +161,6 @@
             this.Controls.Add(this.otazka);
             this.Controls.Add(this.vlastnosť);
             this.Controls.Add(this.typ_vlastnosti);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Qstion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Qstion";

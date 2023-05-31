@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fa1e9f2b-4c17-49e2-a906-e15f8c7112df": {
+      "ProjectGuid": "fa1e9f2b-4c17-49e2-a906-e15f8c7112df",
+      "DisplayName": "guesswho",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
