@@ -92,9 +92,10 @@ namespace guesswho
             // dalej
             // 
             this.dalej.BackColor = System.Drawing.Color.Red;
+            this.dalej.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.dalej.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dalej.ForeColor = System.Drawing.Color.White;
-            this.dalej.Location = new System.Drawing.Point(1254, 707);
+            this.dalej.Location = new System.Drawing.Point(1254, 703);
             this.dalej.Name = "dalej";
             this.dalej.Size = new System.Drawing.Size(119, 60);
             this.dalej.TabIndex = 60;
@@ -105,6 +106,7 @@ namespace guesswho
             // otazka
             // 
             this.otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.otazka.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.otazka.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.otazka.ForeColor = System.Drawing.Color.White;
             this.otazka.Location = new System.Drawing.Point(1254, 782);
@@ -117,7 +119,7 @@ namespace guesswho
             // 
             // tvojhrac
             // 
-            this.tvojhrac.Location = new System.Drawing.Point(1217, 450);
+            this.tvojhrac.Location = new System.Drawing.Point(1213, 431);
             this.tvojhrac.Margin = new System.Windows.Forms.Padding(2);
             this.tvojhrac.Name = "tvojhrac";
             this.tvojhrac.Size = new System.Drawing.Size(188, 203);
@@ -128,7 +130,7 @@ namespace guesswho
             // vlastnosti
             // 
             this.vlastnosti.BackColor = System.Drawing.Color.Gray;
-            this.vlastnosti.Location = new System.Drawing.Point(1217, 203);
+            this.vlastnosti.Location = new System.Drawing.Point(1213, 203);
             this.vlastnosti.Margin = new System.Windows.Forms.Padding(2);
             this.vlastnosti.Name = "vlastnosti";
             this.vlastnosti.Size = new System.Drawing.Size(188, 204);

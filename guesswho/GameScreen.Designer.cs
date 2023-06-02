@@ -356,7 +356,7 @@ namespace guesswho
             // vlastnosti
             // 
             this.vlastnosti.BackColor = System.Drawing.Color.Gray;
-            this.vlastnosti.Location = new System.Drawing.Point(1207, 198);
+            this.vlastnosti.Location = new System.Drawing.Point(1207, 210);
             this.vlastnosti.Margin = new System.Windows.Forms.Padding(2);
             this.vlastnosti.Name = "vlastnosti";
             this.vlastnosti.Size = new System.Drawing.Size(188, 204);
@@ -376,6 +376,7 @@ namespace guesswho
             // otazka
             // 
             this.otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.otazka.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.otazka.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.otazka.ForeColor = System.Drawing.Color.White;
             this.otazka.Location = new System.Drawing.Point(1244, 777);
@@ -389,6 +390,7 @@ namespace guesswho
             // dalej
             // 
             this.dalej.BackColor = System.Drawing.Color.Red;
+            this.dalej.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.dalej.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dalej.ForeColor = System.Drawing.Color.White;
             this.dalej.Location = new System.Drawing.Point(1244, 702);

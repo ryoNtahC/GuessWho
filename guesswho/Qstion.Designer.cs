@@ -78,6 +78,7 @@
             // ano
             // 
             this.ano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ano.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ano.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ano.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.ano.Location = new System.Drawing.Point(196, 236);
@@ -91,6 +92,7 @@
             // nie
             // 
             this.nie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.nie.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.nie.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.nie.ForeColor = System.Drawing.Color.White;
             this.nie.Location = new System.Drawing.Point(396, 236);
@@ -104,6 +106,7 @@
             // Back
             // 
             this.Back.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Back.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Back.ForeColor = System.Drawing.Color.White;
             this.Back.Location = new System.Drawing.Point(12, 357);
@@ -137,13 +140,14 @@
             // 
             // potvrdenie
             // 
+            this.potvrdenie.BackColor = System.Drawing.Color.White;
             this.potvrdenie.Location = new System.Drawing.Point(302, 101);
-            this.potvrdenie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.potvrdenie.Margin = new System.Windows.Forms.Padding(2);
             this.potvrdenie.Name = "potvrdenie";
-            this.potvrdenie.Size = new System.Drawing.Size(75, 19);
+            this.potvrdenie.Size = new System.Drawing.Size(75, 25);
             this.potvrdenie.TabIndex = 8;
             this.potvrdenie.Text = "Potvrdiť typ";
-            this.potvrdenie.UseVisualStyleBackColor = true;
+            this.potvrdenie.UseVisualStyleBackColor = false;
             this.potvrdenie.Click += new System.EventHandler(this.potvrdenie_Click);
             // 
             // Qstion
