@@ -29,7 +29,7 @@ namespace guesswho
                 hracka = new GameScreen();
                 hracka.Show();
             }
-            this.Hide();
+            this.Close();
         }
     }
 }
