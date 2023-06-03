@@ -57,6 +57,11 @@ namespace guesswho
             this.hrac1_16 = new System.Windows.Forms.PictureBox();
             this.hrac1_20 = new System.Windows.Forms.PictureBox();
             this.hrac1_1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.tvojhrac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hrac1_24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hrac1_23)).BeginInit();
@@ -86,27 +91,35 @@ namespace guesswho
             // 
             // dalej
             // 
-            this.dalej.Location = new System.Drawing.Point(1254, 707);
+            this.dalej.BackColor = System.Drawing.Color.Red;
+            this.dalej.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dalej.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dalej.ForeColor = System.Drawing.Color.White;
+            this.dalej.Location = new System.Drawing.Point(1254, 703);
             this.dalej.Name = "dalej";
             this.dalej.Size = new System.Drawing.Size(119, 60);
             this.dalej.TabIndex = 60;
             this.dalej.Text = "Skončiť kolo";
-            this.dalej.UseVisualStyleBackColor = true;
+            this.dalej.UseVisualStyleBackColor = false;
             this.dalej.Click += new System.EventHandler(this.ist);
             // 
             // otazka
             // 
+            this.otazka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.otazka.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.otazka.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.otazka.ForeColor = System.Drawing.Color.White;
             this.otazka.Location = new System.Drawing.Point(1254, 782);
             this.otazka.Name = "otazka";
             this.otazka.Size = new System.Drawing.Size(119, 60);
             this.otazka.TabIndex = 59;
             this.otazka.Text = "Spýtaj sa";
-            this.otazka.UseVisualStyleBackColor = true;
+            this.otazka.UseVisualStyleBackColor = false;
             this.otazka.Click += new System.EventHandler(this.opytat);
             // 
             // tvojhrac
             // 
-            this.tvojhrac.Location = new System.Drawing.Point(1217, 450);
+            this.tvojhrac.Location = new System.Drawing.Point(1213, 431);
             this.tvojhrac.Margin = new System.Windows.Forms.Padding(2);
             this.tvojhrac.Name = "tvojhrac";
             this.tvojhrac.Size = new System.Drawing.Size(188, 203);
@@ -116,7 +129,8 @@ namespace guesswho
             // 
             // vlastnosti
             // 
-            this.vlastnosti.Location = new System.Drawing.Point(1217, 203);
+            this.vlastnosti.BackColor = System.Drawing.Color.Gray;
+            this.vlastnosti.Location = new System.Drawing.Point(1213, 203);
             this.vlastnosti.Margin = new System.Windows.Forms.Padding(2);
             this.vlastnosti.Name = "vlastnosti";
             this.vlastnosti.Size = new System.Drawing.Size(188, 204);
@@ -387,11 +401,57 @@ namespace guesswho
             this.hrac1_1.TabStop = false;
             this.hrac1_1.DoubleClick += new System.EventHandler(this.hrac1_1_DoubleClick);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Blue;
+            this.panel1.Location = new System.Drawing.Point(1410, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(12, 851);
+            this.panel1.TabIndex = 61;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Blue;
+            this.panel2.Location = new System.Drawing.Point(2, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(12, 851);
+            this.panel2.TabIndex = 62;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Blue;
+            this.panel3.Location = new System.Drawing.Point(2, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1410, 10);
+            this.panel3.TabIndex = 63;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Blue;
+            this.panel4.Location = new System.Drawing.Point(2, 845);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1410, 10);
+            this.panel4.TabIndex = 64;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Blue;
+            this.panel5.Location = new System.Drawing.Point(1186, 12);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(16, 833);
+            this.panel5.TabIndex = 65;
+            // 
             // GameScreen2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1424, 857);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dalej);
             this.Controls.Add(this.otazka);
             this.Controls.Add(this.tvojhrac);
@@ -482,5 +542,10 @@ namespace guesswho
         private System.Windows.Forms.PictureBox hrac1_16;
         private System.Windows.Forms.PictureBox hrac1_20;
         private System.Windows.Forms.PictureBox hrac1_1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }
