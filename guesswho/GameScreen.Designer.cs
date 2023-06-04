@@ -375,9 +375,11 @@ namespace guesswho
             // 
             // vlastnosti
             // 
+            this.vlastnosti.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.vlastnosti.Location = new System.Drawing.Point(1609, 244);
             this.vlastnosti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.vlastnosti.Name = "vlastnosti";
+            this.vlastnosti.ReadOnly = true;
             this.vlastnosti.Size = new System.Drawing.Size(249, 250);
             this.vlastnosti.TabIndex = 29;
             this.vlastnosti.Text = "";
@@ -391,11 +393,12 @@ namespace guesswho
             this.tvojhrac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.tvojhrac.TabIndex = 30;
             this.tvojhrac.TabStop = false;
+            this.tvojhrac.Click += new System.EventHandler(this.tvojhrac_Click);
             // 
             // otazka
             // 
             this.otazka.Location = new System.Drawing.Point(1659, 956);
-            this.otazka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.otazka.Margin = new System.Windows.Forms.Padding(4);
             this.otazka.Name = "otazka";
             this.otazka.Size = new System.Drawing.Size(159, 74);
             this.otazka.TabIndex = 31;
@@ -406,7 +409,7 @@ namespace guesswho
             // dalej
             // 
             this.dalej.Location = new System.Drawing.Point(1659, 864);
-            this.dalej.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dalej.Margin = new System.Windows.Forms.Padding(4);
             this.dalej.Name = "dalej";
             this.dalej.Size = new System.Drawing.Size(159, 74);
             this.dalej.TabIndex = 32;

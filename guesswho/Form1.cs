@@ -42,24 +42,6 @@ namespace guesswho
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-            MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
-            connection.Open();
-            if (connection.State == ConnectionState.Open)
-            {
-                button3.Text = "Success";
-                button3.BackColor = Color.Green;
-            }
-            else if (connection.State == ConnectionState.Closed)
-            {
-                button3.Text = "Not succes";
-                button3.BackColor = Color.Red;
-            }
-
-        }
-
         private void controls(object sender, EventArgs e)
         {
             this.Hide();

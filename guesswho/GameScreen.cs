@@ -23,7 +23,8 @@ namespace guesswho
             nacitanie_obrazkov();
             int ciselko = new Random().Next(0, 23);
             tvojhrac.ImageLocation = pandrlaci[ciselko];
-            
+            this.WindowState = FormWindowState.Maximized;
+
 
 
         }
@@ -855,6 +856,11 @@ namespace guesswho
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
 
             }
+        }
+
+        private void tvojhrac_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
