@@ -28,6 +28,7 @@ namespace guesswho
 
 
         }
+        int idecko;
         string[] pandrlaci =
         {
                 "https://i.ibb.co/8DqFHjR/fotor-ai-20230510163746.png",
@@ -475,11 +476,11 @@ namespace guesswho
 
         private void hrac1_1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "1";
+            idecko = 1;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
@@ -492,369 +493,346 @@ namespace guesswho
 
         private void hrac1_2_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "2";
+            idecko = 2;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_3_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "3";
+            idecko = 3;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_4_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "4";
+            idecko = 4;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_5_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "5";
+            idecko = 5;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_6_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "6";
+            idecko = 6;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_7_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "7";
+            idecko = 7;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_8_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "8";
+            idecko = 8;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_9_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "9";
+            idecko = 9;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_10_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "10";
+            idecko = 10;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_11_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "11";
+            idecko = 11;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_12_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "12";
+            idecko = 12;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_13_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "13";
+            idecko = 13;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_14_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "14";
+            idecko = 14;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_15_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "15";
+            idecko = 15;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_16_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "16";
+            idecko = 16;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_17_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "17";
+            idecko = 17;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_18_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "18";
+            idecko = 18;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_19_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "19";
+            idecko = 19;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_20_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "20";
+            idecko = 20;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_21_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "21";
+            idecko = 21;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_22_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "22";
+            idecko = 22;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_23_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "23";
+            idecko = 23;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
         private void hrac1_24_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "24";
+            idecko = 24;
             MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
             connection.Open();
-            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac1 where Id=@id", connection);
-            cmd1.Parameters.AddWithValue("id", textBox1.Text);
+            MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy, Link, Id, Stav from hrac2 where Id=@id", connection);
+            cmd1.Parameters.AddWithValue("id", idecko);
             MySqlDataReader reader1;
             reader1 = cmd1.ExecuteReader();
             if (reader1.Read())
             {
                 vlastnosti.Text = "Meno: " + reader1["Meno"].ToString() + "\n" + "Pohlavie: " + reader1["Pohlavie"].ToString() + "\n" + "Vlasy: " + reader1["Vlasy"].ToString() + "\n" + "Oči: " + reader1["Oci"].ToString() + "\n" + "Pokrývka hlavy: " + reader1["Pokryvka"].ToString() + "\n" + "Doplnok: " + reader1["Doplnok"].ToString() + "\n" + "Fúzy: " + reader1["Fuzy"].ToString();
-
             }
         }
 
