@@ -129,6 +129,7 @@
     <Compile Include="Ovlad.Designer.cs">
       <DependentUpon>Ovlad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panacik.cs" />
     <Compile Include="Prechod.cs">
       <SubType>Form</SubType>
     </Compile>
