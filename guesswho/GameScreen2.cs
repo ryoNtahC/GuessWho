@@ -17,6 +17,8 @@ namespace guesswho
     public partial class GameScreen2 : Form
     {
         int ciselko3;
+        List<string> pandrlaci = new List<string>() { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+        List<string> preciarknuty = new List<string>() { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
         public GameScreen2()
         {
             InitializeComponent();
@@ -33,41 +35,18 @@ namespace guesswho
 
 
 
-        List<string> pandrlaci = new List<string>();
+        
         private void naplnenie_obrazkov()
         {
             for(int i = 1; i < 25; i++)
             {
-                pandrlaci[i] = "guesswho/obrazky/normalne/obrazok" + i + ".png";
+                pandrlaci[i] = @"obrazky\normalne\obrazok" + i + ".png";
+            }
+            for (int i = 1; i < 25; i++)
+            {
+                preciarknuty[i] = @"obrazky\preciarknute\obraz" + i + ".png";
             }
         }
-        string[] preciarknuty =
-        {
-                "https://i.ibb.co/pQQ37bL/rumcajs.png",
-                "https://i.ibb.co/zbqGgVd/rakosnicek2.jpg",
-                "https://i.ibb.co/GnC1CJn/ferdo.jpg",
-                "https://i.ibb.co/cQgG6tC/vecernicek.png",
-                "https://i.ibb.co/4pRxPFr/krakonos.jpg",
-                "https://i.ibb.co/PY9DwGr/krtko3.jpg",
-                "https://i.ibb.co/BnZMpvZ/matko.png",
-                "https://i.ibb.co/B6zSz0z/valibuk.png",
-                "https://i.ibb.co/yNnSY2Q/kubko.jpg",
-                "https://i.ibb.co/wSg1Knf/pat-new.png",
-                "https://i.ibb.co/GQV6TN4/mat.jpg",
-                "https://i.ibb.co/pyMKP4C/bob.jpg",
-                "https://i.ibb.co/G2gP4tn/bobek.jpg",
-                "https://i.ibb.co/hLjQTHK/mach.jpg",
-                "https://i.ibb.co/nfbNBkK/maxipesfik.jpg",
-                "https://i.ibb.co/3FP1mXC/hurvinek.png",
-                "https://i.ibb.co/0tf4X0v/maja.png",
-                "https://i.ibb.co/dP5mVYq/amalka.jpg",
-                "https://i.ibb.co/56vvfkX/sebestova.png",
-                "https://i.ibb.co/VNsZH89/zofka.png",
-                "https://i.ibb.co/z2V3rKw/eliska.jpg",
-                "https://i.ibb.co/tP0JLqg/perinbaba2.jpg",
-                "https://i.ibb.co/YyZc5Z4/popoluska.png",
-                "https://i.ibb.co/TT5spW6/makovicka.jpg",
-        };
         
         private void nacitanie_obrazkov()
         {
@@ -101,13 +80,13 @@ namespace guesswho
         private void hrac1_1_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_1.ImageLocation == pandrlaci[0])
+                if (hrac1_1.ImageLocation == pandrlaci[1])
                 {
-                    hrac1_1.ImageLocation = preciarknuty[0];
+                    hrac1_1.ImageLocation = preciarknuty[1];
                 }
                 else
                 {
-                    hrac1_1.ImageLocation = pandrlaci[0];
+                    hrac1_1.ImageLocation = pandrlaci[1];
                 }
             }
         }
@@ -115,13 +94,13 @@ namespace guesswho
         private void hrac1_2_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_2.ImageLocation == pandrlaci[1])
+                if (hrac1_2.ImageLocation == pandrlaci[2])
                 {
-                    hrac1_2.ImageLocation = preciarknuty[1];
+                    hrac1_2.ImageLocation = preciarknuty[2];
                 }
                 else
                 {
-                    hrac1_2.ImageLocation = pandrlaci[1];
+                    hrac1_2.ImageLocation = pandrlaci[2];
                 }
             }
         }
@@ -129,13 +108,13 @@ namespace guesswho
         private void hrac1_3_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_3.ImageLocation == pandrlaci[2])
+                if (hrac1_3.ImageLocation == pandrlaci[3])
                 {
-                    hrac1_3.ImageLocation = preciarknuty[2];
+                    hrac1_3.ImageLocation = preciarknuty[3];
                 }
                 else
                 {
-                    hrac1_3.ImageLocation = pandrlaci[2];
+                    hrac1_3.ImageLocation = pandrlaci[3];
                 }
             }
         }
@@ -143,13 +122,13 @@ namespace guesswho
         private void hrac1_4_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_4.ImageLocation == pandrlaci[3])
+                if (hrac1_4.ImageLocation == pandrlaci[4])
                 {
-                    hrac1_4.ImageLocation = preciarknuty[3];
+                    hrac1_4.ImageLocation = preciarknuty[4];
                 }
                 else
                 {
-                    hrac1_4.ImageLocation = pandrlaci[3];
+                    hrac1_4.ImageLocation = pandrlaci[4];
                 }
             }
         }
@@ -157,13 +136,13 @@ namespace guesswho
         private void hrac1_5_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_5.ImageLocation == pandrlaci[4])
+                if (hrac1_5.ImageLocation == pandrlaci[5])
                 {
-                    hrac1_5.ImageLocation = preciarknuty[4];
+                    hrac1_5.ImageLocation = preciarknuty[5];
                 }
                 else
                 {
-                    hrac1_5.ImageLocation = pandrlaci[4];
+                    hrac1_5.ImageLocation = pandrlaci[5];
                 }
             }
         }
@@ -171,13 +150,13 @@ namespace guesswho
         private void hrac1_6_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_6.ImageLocation == pandrlaci[5])
+                if (hrac1_6.ImageLocation == pandrlaci[6])
                 {
-                    hrac1_6.ImageLocation = preciarknuty[5];
+                    hrac1_6.ImageLocation = preciarknuty[6];
                 }
                 else
                 {
-                    hrac1_6.ImageLocation = pandrlaci[5];
+                    hrac1_6.ImageLocation = pandrlaci[6];
                 }
             }
         }
@@ -185,13 +164,13 @@ namespace guesswho
         private void hrac1_7_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_7.ImageLocation == pandrlaci[6])
+                if (hrac1_7.ImageLocation == pandrlaci[7])
                 {
-                    hrac1_7.ImageLocation = preciarknuty[6];
+                    hrac1_7.ImageLocation = preciarknuty[7];
                 }
                 else
                 {
-                    hrac1_7.ImageLocation = pandrlaci[6];
+                    hrac1_7.ImageLocation = pandrlaci[7];
                 }
             }
         }
@@ -199,13 +178,13 @@ namespace guesswho
         private void hrac1_8_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_8.ImageLocation == pandrlaci[7])
+                if (hrac1_8.ImageLocation == pandrlaci[8])
                 {
-                    hrac1_8.ImageLocation = preciarknuty[7];
+                    hrac1_8.ImageLocation = preciarknuty[8];
                 }
                 else
                 {
-                    hrac1_8.ImageLocation = pandrlaci[7];
+                    hrac1_8.ImageLocation = pandrlaci[8];
                 }
             }
         }
@@ -213,13 +192,13 @@ namespace guesswho
         private void hrac1_9_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_9.ImageLocation == pandrlaci[8])
+                if (hrac1_9.ImageLocation == pandrlaci[9])
                 {
-                    hrac1_9.ImageLocation = preciarknuty[8];
+                    hrac1_9.ImageLocation = preciarknuty[9];
                 }
                 else
                 {
-                    hrac1_9.ImageLocation = pandrlaci[8];
+                    hrac1_9.ImageLocation = pandrlaci[9];
                 }
             }
         }
@@ -227,13 +206,13 @@ namespace guesswho
         private void hrac1_10_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_10.ImageLocation == pandrlaci[9])
+                if (hrac1_10.ImageLocation == pandrlaci[10])
                 {
-                    hrac1_10.ImageLocation = preciarknuty[9];
+                    hrac1_10.ImageLocation = preciarknuty[10];
                 }
                 else
                 {
-                    hrac1_10.ImageLocation = pandrlaci[9];
+                    hrac1_10.ImageLocation = pandrlaci[10];
                 }
             }
         }
@@ -241,13 +220,13 @@ namespace guesswho
         private void hrac1_11_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_11.ImageLocation == pandrlaci[10])
+                if (hrac1_11.ImageLocation == pandrlaci[11])
                 {
-                    hrac1_11.ImageLocation = preciarknuty[10];
+                    hrac1_11.ImageLocation = preciarknuty[11];
                 }
                 else
                 {
-                    hrac1_11.ImageLocation = pandrlaci[10];
+                    hrac1_11.ImageLocation = pandrlaci[11];
                 }
             }
         }
@@ -255,13 +234,13 @@ namespace guesswho
         private void hrac1_12_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_12.ImageLocation == pandrlaci[11])
+                if (hrac1_12.ImageLocation == pandrlaci[12])
                 {
-                    hrac1_12.ImageLocation = preciarknuty[11];
+                    hrac1_12.ImageLocation = preciarknuty[12];
                 }
                 else
                 {
-                    hrac1_12.ImageLocation = pandrlaci[11];
+                    hrac1_12.ImageLocation = pandrlaci[12];
                 }
             }
         }
@@ -269,13 +248,13 @@ namespace guesswho
         private void hrac1_13_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_13.ImageLocation == pandrlaci[12])
+                if (hrac1_13.ImageLocation == pandrlaci[13])
                 {
-                    hrac1_13.ImageLocation = preciarknuty[12];
+                    hrac1_13.ImageLocation = preciarknuty[13];
                 }
                 else
                 {
-                    hrac1_13.ImageLocation = pandrlaci[12];
+                    hrac1_13.ImageLocation = pandrlaci[13];
                 }
             }
         }
@@ -283,13 +262,13 @@ namespace guesswho
         private void hrac1_14_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_14.ImageLocation == pandrlaci[13])
+                if (hrac1_14.ImageLocation == pandrlaci[14])
                 {
-                    hrac1_14.ImageLocation = preciarknuty[13];
+                    hrac1_14.ImageLocation = preciarknuty[14];
                 }
                 else
                 {
-                    hrac1_14.ImageLocation = pandrlaci[13];
+                    hrac1_14.ImageLocation = pandrlaci[14];
                 }
             }
         }
@@ -297,13 +276,13 @@ namespace guesswho
         private void hrac1_15_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_15.ImageLocation == pandrlaci[14])
+                if (hrac1_15.ImageLocation == pandrlaci[15])
                 {
-                    hrac1_15.ImageLocation = preciarknuty[14];
+                    hrac1_15.ImageLocation = preciarknuty[15];
                 }
                 else
                 {
-                    hrac1_15.ImageLocation = pandrlaci[14];
+                    hrac1_15.ImageLocation = pandrlaci[15];
                 }
             }
         }
@@ -311,13 +290,13 @@ namespace guesswho
         private void hrac1_16_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_16.ImageLocation == pandrlaci[15])
+                if (hrac1_16.ImageLocation == pandrlaci[16])
                 {
-                    hrac1_16.ImageLocation = preciarknuty[15];
+                    hrac1_16.ImageLocation = preciarknuty[16];
                 }
                 else
                 {
-                    hrac1_16.ImageLocation = pandrlaci[15];
+                    hrac1_16.ImageLocation = pandrlaci[16];
                 }
             }
         }
@@ -325,13 +304,13 @@ namespace guesswho
         private void hrac1_17_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_17.ImageLocation == pandrlaci[16])
+                if (hrac1_17.ImageLocation == pandrlaci[17])
                 {
-                    hrac1_17.ImageLocation = preciarknuty[16];
+                    hrac1_17.ImageLocation = preciarknuty[17];
                 }
                 else
                 {
-                    hrac1_17.ImageLocation = pandrlaci[16];
+                    hrac1_17.ImageLocation = pandrlaci[17];
                 }
             }
         }
@@ -339,13 +318,13 @@ namespace guesswho
         private void hrac1_18_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_18.ImageLocation == pandrlaci[17])
+                if (hrac1_18.ImageLocation == pandrlaci[18])
                 {
-                    hrac1_18.ImageLocation = preciarknuty[17];
+                    hrac1_18.ImageLocation = preciarknuty[18];
                 }
                 else
                 {
-                    hrac1_18.ImageLocation = pandrlaci[17];
+                    hrac1_18.ImageLocation = pandrlaci[18];
                 }
             }
         }
@@ -353,13 +332,13 @@ namespace guesswho
         private void hrac1_19_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_19.ImageLocation == pandrlaci[18])
+                if (hrac1_19.ImageLocation == pandrlaci[19])
                 {
-                    hrac1_19.ImageLocation = preciarknuty[18];
+                    hrac1_19.ImageLocation = preciarknuty[19];
                 }
                 else
                 {
-                    hrac1_19.ImageLocation = pandrlaci[18];
+                    hrac1_19.ImageLocation = pandrlaci[19];
                 }
             }
         }
@@ -367,13 +346,13 @@ namespace guesswho
         private void hrac1_20_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_20.ImageLocation == pandrlaci[19])
+                if (hrac1_20.ImageLocation == pandrlaci[20])
                 {
-                    hrac1_20.ImageLocation = preciarknuty[19];
+                    hrac1_20.ImageLocation = preciarknuty[20];
                 }
                 else
                 {
-                    hrac1_20.ImageLocation = pandrlaci[19];
+                    hrac1_20.ImageLocation = pandrlaci[20];
                 }
             }
         }
@@ -381,13 +360,13 @@ namespace guesswho
         private void hrac1_21_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_21.ImageLocation == pandrlaci[20])
+                if (hrac1_21.ImageLocation == pandrlaci[21])
                 {
-                    hrac1_21.ImageLocation = preciarknuty[20];
+                    hrac1_21.ImageLocation = preciarknuty[21];
                 }
                 else
                 {
-                    hrac1_21.ImageLocation = pandrlaci[20];
+                    hrac1_21.ImageLocation = pandrlaci[21];
                 }
             }
         }
@@ -395,13 +374,13 @@ namespace guesswho
         private void hrac1_22_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_22.ImageLocation == pandrlaci[21])
+                if (hrac1_22.ImageLocation == pandrlaci[22])
                 {
-                    hrac1_22.ImageLocation = preciarknuty[21];
+                    hrac1_22.ImageLocation = preciarknuty[22];
                 }
                 else
                 {
-                    hrac1_22.ImageLocation = pandrlaci[21];
+                    hrac1_22.ImageLocation = pandrlaci[22];
                 }
             }
         }
@@ -409,13 +388,13 @@ namespace guesswho
         private void hrac1_23_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_23.ImageLocation == pandrlaci[22])
+                if (hrac1_23.ImageLocation == pandrlaci[23])
                 {
-                    hrac1_23.ImageLocation = preciarknuty[22];
+                    hrac1_23.ImageLocation = preciarknuty[23];
                 }
                 else
                 {
-                    hrac1_23.ImageLocation = pandrlaci[22];
+                    hrac1_23.ImageLocation = pandrlaci[23];
                 }
             }
         }
@@ -423,13 +402,13 @@ namespace guesswho
         private void hrac1_24_DoubleClick(object sender, EventArgs e)
         {
             {
-                if (hrac1_24.ImageLocation == pandrlaci[23])
+                if (hrac1_24.ImageLocation == pandrlaci[24])
                 {
-                    hrac1_24.ImageLocation = preciarknuty[23];
+                    hrac1_24.ImageLocation = preciarknuty[24];
                 }
                 else
                 {
-                    hrac1_24.ImageLocation = pandrlaci[23];
+                    hrac1_24.ImageLocation = pandrlaci[24];
                 }
             }
         }

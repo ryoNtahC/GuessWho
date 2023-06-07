@@ -60,7 +60,7 @@ namespace guesswho
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(190, 348);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(129, 21);
+            this.checkBox1.Size = new System.Drawing.Size(125, 20);
             this.checkBox1.TabIndex = 18;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -72,10 +72,9 @@ namespace guesswho
             this.textpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textpassword.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textpassword.Location = new System.Drawing.Point(72, 278);
-            this.textpassword.Multiline = true;
             this.textpassword.Name = "textpassword";
             this.textpassword.PasswordChar = '•';
-            this.textpassword.Size = new System.Drawing.Size(249, 40);
+            this.textpassword.Size = new System.Drawing.Size(249, 37);
             this.textpassword.TabIndex = 15;
             // 
             // label3
@@ -83,7 +82,7 @@ namespace guesswho
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(69, 249);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(67, 16);
             this.label3.TabIndex = 14;
             this.label3.Text = "Password";
             // 
@@ -102,7 +101,7 @@ namespace guesswho
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(69, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 12;
             this.label2.Text = "Username";
             // 
@@ -131,7 +130,7 @@ namespace guesswho
             this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label6.Location = new System.Drawing.Point(150, 459);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 17);
+            this.label6.Size = new System.Drawing.Size(90, 16);
             this.label6.TabIndex = 20;
             this.label6.Text = "Nemáte účet?";
             this.label6.Click += new System.EventHandler(this.ist);

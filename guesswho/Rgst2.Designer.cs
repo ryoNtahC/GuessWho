@@ -62,10 +62,11 @@ namespace guesswho
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(190, 418);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(129, 21);
+            this.checkBox1.Size = new System.Drawing.Size(125, 20);
             this.checkBox1.TabIndex = 18;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // textpasswordconfirm
             // 
@@ -83,7 +84,7 @@ namespace guesswho
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(68, 329);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 17);
+            this.label4.Size = new System.Drawing.Size(115, 16);
             this.label4.TabIndex = 16;
             this.label4.Text = "Confirm Password";
             // 
@@ -103,7 +104,7 @@ namespace guesswho
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(68, 231);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(67, 16);
             this.label3.TabIndex = 14;
             this.label3.Text = "Password";
             // 
@@ -122,7 +123,7 @@ namespace guesswho
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(68, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 12;
             this.label2.Text = "Username";
             // 
@@ -151,7 +152,7 @@ namespace guesswho
             this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label6.Location = new System.Drawing.Point(150, 533);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 17);
+            this.label6.Size = new System.Drawing.Size(91, 16);
             this.label6.TabIndex = 20;
             this.label6.Text = "Už máte účet?";
             this.label6.Click += new System.EventHandler(this.ist);

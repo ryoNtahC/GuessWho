@@ -59,8 +59,7 @@ namespace guesswho
             login.Closed += (s, args) => this.Close();
             login.Show();
         }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
             {
