@@ -36,33 +36,41 @@ namespace guesswho
             // text
             // 
             this.text.AutoSize = true;
-            this.text.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.text.Location = new System.Drawing.Point(108, 80);
+            this.text.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.text.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.text.ForeColor = System.Drawing.Color.Red;
+            this.text.Location = new System.Drawing.Point(39, 85);
             this.text.Name = "text";
-            this.text.Size = new System.Drawing.Size(383, 39);
-            this.text.TabIndex = 35;
+            this.text.Size = new System.Drawing.Size(521, 51);
+            this.text.TabIndex = 37;
             this.text.Text = "Na ťahu je hráč číslo 1";
             // 
             // pokracovanie
             // 
-            this.pokracovanie.Location = new System.Drawing.Point(239, 236);
+            this.pokracovanie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.pokracovanie.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.pokracovanie.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pokracovanie.ForeColor = System.Drawing.Color.White;
+            this.pokracovanie.Location = new System.Drawing.Point(230, 232);
             this.pokracovanie.Name = "pokracovanie";
             this.pokracovanie.Size = new System.Drawing.Size(119, 60);
-            this.pokracovanie.TabIndex = 34;
+            this.pokracovanie.TabIndex = 36;
             this.pokracovanie.Text = "Pokračovať";
-            this.pokracovanie.UseVisualStyleBackColor = true;
+            this.pokracovanie.UseVisualStyleBackColor = false;
             this.pokracovanie.Click += new System.EventHandler(this.pokracuj);
             // 
             // Prechod2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(599, 377);
             this.Controls.Add(this.text);
             this.Controls.Add(this.pokracovanie);
             this.Name = "Prechod2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prechod2";
+            this.Click += new System.EventHandler(this.pokracuj);
             this.ResumeLayout(false);
             this.PerformLayout();
 

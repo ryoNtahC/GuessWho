@@ -28,16 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.odpoved = new System.Windows.Forms.Label();
+            this.potvrdenie = new System.Windows.Forms.Button();
             this.typ_vlastnosti = new System.Windows.Forms.ComboBox();
-            this.vlastnosť = new System.Windows.Forms.ComboBox();
-            this.otazka = new System.Windows.Forms.Label();
             this.ano = new System.Windows.Forms.Button();
+            this.vlastnosť = new System.Windows.Forms.ComboBox();
+            this.spytaj = new System.Windows.Forms.Button();
             this.nie = new System.Windows.Forms.Button();
             this.Back = new System.Windows.Forms.Button();
-            this.odpoved = new System.Windows.Forms.Label();
-            this.spytaj = new System.Windows.Forms.Button();
-            this.potvrdenie = new System.Windows.Forms.Button();
+            this.otazka = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // odpoved
+            // 
+            this.odpoved.AutoSize = true;
+            this.odpoved.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.odpoved.Location = new System.Drawing.Point(291, 298);
+            this.odpoved.Name = "odpoved";
+            this.odpoved.Size = new System.Drawing.Size(92, 31);
+            this.odpoved.TabIndex = 6;
+            this.odpoved.Text = "label2";
+            this.odpoved.Visible = false;
+            // 
+            // potvrdenie
+            // 
+            this.potvrdenie.BackColor = System.Drawing.Color.DarkViolet;
+            this.potvrdenie.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.potvrdenie.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.potvrdenie.ForeColor = System.Drawing.Color.White;
+            this.potvrdenie.Location = new System.Drawing.Point(296, 100);
+            this.potvrdenie.Margin = new System.Windows.Forms.Padding(2);
+            this.potvrdenie.Name = "potvrdenie";
+            this.potvrdenie.Size = new System.Drawing.Size(81, 25);
+            this.potvrdenie.TabIndex = 8;
+            this.potvrdenie.Text = "Potvrdiť typ";
+            this.potvrdenie.UseVisualStyleBackColor = false;
+            this.potvrdenie.Click += new System.EventHandler(this.potvrdenie_Click);
             // 
             // typ_vlastnosti
             // 
@@ -54,27 +80,6 @@
             this.typ_vlastnosti.Size = new System.Drawing.Size(121, 21);
             this.typ_vlastnosti.TabIndex = 0;
             // 
-            // vlastnosť
-            // 
-            this.vlastnosť.FormattingEnabled = true;
-            this.vlastnosť.Items.AddRange(new object[] {
-            "cus"});
-            this.vlastnosť.Location = new System.Drawing.Point(350, 63);
-            this.vlastnosť.Name = "vlastnosť";
-            this.vlastnosť.Size = new System.Drawing.Size(121, 21);
-            this.vlastnosť.TabIndex = 1;
-            // 
-            // otazka
-            // 
-            this.otazka.AutoSize = true;
-            this.otazka.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.otazka.Location = new System.Drawing.Point(167, 176);
-            this.otazka.Name = "otazka";
-            this.otazka.Size = new System.Drawing.Size(92, 31);
-            this.otazka.TabIndex = 2;
-            this.otazka.Text = "label1";
-            this.otazka.Visible = false;
-            // 
             // ano
             // 
             this.ano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -88,6 +93,30 @@
             this.ano.Text = "Áno";
             this.ano.UseVisualStyleBackColor = false;
             this.ano.Click += new System.EventHandler(this.ano_Click);
+            // 
+            // vlastnosť
+            // 
+            this.vlastnosť.FormattingEnabled = true;
+            this.vlastnosť.Items.AddRange(new object[] {
+            "cus"});
+            this.vlastnosť.Location = new System.Drawing.Point(350, 63);
+            this.vlastnosť.Name = "vlastnosť";
+            this.vlastnosť.Size = new System.Drawing.Size(121, 21);
+            this.vlastnosť.TabIndex = 1;
+            // 
+            // spytaj
+            // 
+            this.spytaj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.spytaj.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.spytaj.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.spytaj.ForeColor = System.Drawing.Color.White;
+            this.spytaj.Location = new System.Drawing.Point(296, 150);
+            this.spytaj.Name = "spytaj";
+            this.spytaj.Size = new System.Drawing.Size(81, 23);
+            this.spytaj.TabIndex = 7;
+            this.spytaj.Text = "Spýtať sa";
+            this.spytaj.UseVisualStyleBackColor = false;
+            this.spytaj.Click += new System.EventHandler(this.spytaj_Click);
             // 
             // nie
             // 
@@ -117,38 +146,16 @@
             this.Back.UseVisualStyleBackColor = false;
             this.Back.Click += new System.EventHandler(this.spat);
             // 
-            // odpoved
+            // otazka
             // 
-            this.odpoved.AutoSize = true;
-            this.odpoved.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.odpoved.Location = new System.Drawing.Point(291, 298);
-            this.odpoved.Name = "odpoved";
-            this.odpoved.Size = new System.Drawing.Size(92, 31);
-            this.odpoved.TabIndex = 6;
-            this.odpoved.Text = "label2";
-            this.odpoved.Visible = false;
-            // 
-            // spytaj
-            // 
-            this.spytaj.Location = new System.Drawing.Point(302, 160);
-            this.spytaj.Name = "spytaj";
-            this.spytaj.Size = new System.Drawing.Size(75, 23);
-            this.spytaj.TabIndex = 7;
-            this.spytaj.Text = "Spýtať sa";
-            this.spytaj.UseVisualStyleBackColor = true;
-            this.spytaj.Click += new System.EventHandler(this.spytaj_Click);
-            // 
-            // potvrdenie
-            // 
-            this.potvrdenie.BackColor = System.Drawing.Color.White;
-            this.potvrdenie.Location = new System.Drawing.Point(302, 101);
-            this.potvrdenie.Margin = new System.Windows.Forms.Padding(2);
-            this.potvrdenie.Name = "potvrdenie";
-            this.potvrdenie.Size = new System.Drawing.Size(75, 25);
-            this.potvrdenie.TabIndex = 8;
-            this.potvrdenie.Text = "Potvrdiť typ";
-            this.potvrdenie.UseVisualStyleBackColor = false;
-            this.potvrdenie.Click += new System.EventHandler(this.potvrdenie_Click);
+            this.otazka.AutoSize = true;
+            this.otazka.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.otazka.Location = new System.Drawing.Point(167, 176);
+            this.otazka.Name = "otazka";
+            this.otazka.Size = new System.Drawing.Size(92, 31);
+            this.otazka.TabIndex = 2;
+            this.otazka.Text = "label1";
+            this.otazka.Visible = false;
             // 
             // Qstion
             // 
@@ -175,14 +182,14 @@
 
         #endregion
 
+        private System.Windows.Forms.Label odpoved;
+        private System.Windows.Forms.Button potvrdenie;
         private System.Windows.Forms.ComboBox typ_vlastnosti;
-        private System.Windows.Forms.ComboBox vlastnosť;
-        private System.Windows.Forms.Label otazka;
         private System.Windows.Forms.Button ano;
+        private System.Windows.Forms.ComboBox vlastnosť;
+        private System.Windows.Forms.Button spytaj;
         private System.Windows.Forms.Button nie;
         private System.Windows.Forms.Button Back;
-        private System.Windows.Forms.Label odpoved;
-        private System.Windows.Forms.Button spytaj;
-        private System.Windows.Forms.Button potvrdenie;
+        private System.Windows.Forms.Label otazka;
     }
 }
