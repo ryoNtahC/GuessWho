@@ -116,7 +116,6 @@ namespace guesswho
             this.textusername.Name = "textusername";
             this.textusername.Size = new System.Drawing.Size(249, 37);
             this.textusername.TabIndex = 13;
-            this.textusername.TextChanged += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 

@@ -77,7 +77,6 @@ namespace guesswho
             this.textpassword.PasswordChar = '•';
             this.textpassword.Size = new System.Drawing.Size(249, 40);
             this.textpassword.TabIndex = 15;
-            this.textpassword.Enter += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -97,7 +96,6 @@ namespace guesswho
             this.textusername.Name = "textusername";
             this.textusername.Size = new System.Drawing.Size(249, 37);
             this.textusername.TabIndex = 13;
-            this.textusername.Enter += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
