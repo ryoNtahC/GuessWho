@@ -123,6 +123,12 @@
     <Compile Include="Lgn.Designer.cs">
       <DependentUpon>Lgn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lgn2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lgn2.Designer.cs">
+      <DependentUpon>Lgn2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ovlad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rgst2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rgst2.Designer.cs">
+      <DependentUpon>Rgst2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="win1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="win1.Designer.cs">
+      <DependentUpon>win1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="win2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="win2.Designer.cs">
+      <DependentUpon>win2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Choose.resx">
       <DependentUpon>Choose.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lgn.resx">
       <DependentUpon>Lgn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lgn2.resx">
+      <DependentUpon>Lgn2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ovlad.resx">
       <DependentUpon>Ovlad.cs</DependentUpon>
@@ -198,6 +225,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Rgst2.resx">
+      <DependentUpon>Rgst2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="win1.resx">
+      <DependentUpon>win1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="win2.resx">
+      <DependentUpon>win2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

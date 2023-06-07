@@ -16,6 +16,9 @@ namespace guesswho
     public partial class GameScreen : Form
     {
         int ciselko;
+        int ciselko2;
+        public static int ciselko1;
+        public static int ciselkoposli;
 
         public GameScreen()
         {
@@ -25,11 +28,14 @@ namespace guesswho
             tvojhrac.ImageLocation = pandrlaci[ciselko];
             this.WindowState = FormWindowState.Maximized;
             nacitanie_vlastnosti();
-
+            nacitanie_vyhry();
+            
+            textBox2.Text = panacikovia[ciselko2].Meno;
 
 
         }
-        List<Panacik> panacikovia = new List<Panacik>();
+        
+        public static List<Panacik> panacikovia = new List<Panacik>();
         string[] pandrlaci =
         {
                 "https://i.ibb.co/8DqFHjR/fotor-ai-20230510163746.png",
@@ -101,6 +107,13 @@ namespace guesswho
                 }
             }
         }
+        private void nacitanie_vyhry()
+        {
+            ciselko2 = new Random().Next(0, 23);
+            ciselko1 = ciselko;
+            ciselkoposli = ciselko2;
+        }
+        
         private void nacitanie_obrazkov()
         {
             hrac1_1.ImageLocation = pandrlaci[0];
@@ -640,6 +653,36 @@ namespace guesswho
         {
 
                 vlastnosti.Text = "Meno: " + panacikovia[ciselko].Meno + "\n" + "Pohlavie: " + panacikovia[ciselko].Pohlavie + "\n" + "Vlasy: " + panacikovia[ciselko].Vlasy + "\n" + "Oči: " + panacikovia[ciselko].Oci + "\n" + "Pokrývka: " + panacikovia[ciselko].Pokryvka + "\n" + "Doplnok: " + panacikovia[ciselko].Doplnok + "\n" + "Fúzy: " + panacikovia[ciselko].Fuzy;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox3.Text == textBox2.Text)
+            {
+                this.Hide();
+                win1 vyhraj = new win1();
+                vyhraj.Closed += (s, args) => this.Close();
+                vyhraj.Show();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Nope", "Zlá voľba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Prechod prechadzam = Application.OpenForms.OfType<Prechod>().FirstOrDefault();
+                if (prechadzam != null)
+                {
+                    prechadzam.Show();
+                }
+                else
+                {
+                    prechadzam = new Prechod();
+                    prechadzam.Show();
+                }
+                textBox3.Text = "";
+                this.Hide();
+
+
+            }
         }
     }
 }

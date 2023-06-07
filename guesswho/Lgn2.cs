@@ -12,21 +12,19 @@ using System.Data.SqlClient;
 
 namespace guesswho
 {
-    public partial class Lgn : Form
+    public partial class Lgn2 : Form
     {
-        public static TextBox tbx1;
-
-        public Lgn()
+        public static TextBox tbx2;
+        public Lgn2()
         {
             InitializeComponent();
         }
-
         MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
 
         private void ist(object sender, EventArgs e)
         {
             this.Hide();
-            Rgst register = new Rgst();
+            Rgst2 register = new Rgst2();
             register.Closed += (s, args) => this.Close();
             register.Show();
         }
@@ -41,13 +39,13 @@ namespace guesswho
 
             da.Fill(dt);
 
-            if(dt.Rows.Count > 0)
+            if (dt.Rows.Count > 0)
             {
                 this.Hide();
-                Lgn2 login = new Lgn2();
-                login.Closed += (s, args) => this.Close();
-                login.Show();
-                tbx1 = textusername;
+                GameScreen hracka = new GameScreen();
+                hracka.Closed += (s, args) => this.Close();
+                hracka.Show();
+                tbx2 = textusername;
 
             }
             else

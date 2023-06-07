@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace guesswho
 {
-    internal class Panacik
+    public class Panacik
     {
         private string meno;
         private string pohlavie;

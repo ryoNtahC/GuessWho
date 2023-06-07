@@ -47,16 +47,16 @@ namespace guesswho
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(74, 55);
+            this.label1.Location = new System.Drawing.Point(61, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 40);
+            this.label1.Size = new System.Drawing.Size(134, 40);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Get Started";
+            this.label1.Text = "Hráč 1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(78, 129);
+            this.label2.Location = new System.Drawing.Point(65, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 17);
             this.label2.TabIndex = 1;
@@ -66,29 +66,29 @@ namespace guesswho
             // 
             this.textusername.BackColor = System.Drawing.Color.Gainsboro;
             this.textusername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textusername.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textusername.Location = new System.Drawing.Point(80, 162);
-            this.textusername.Multiline = true;
+            this.textusername.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Bold);
+            this.textusername.Location = new System.Drawing.Point(67, 165);
             this.textusername.Name = "textusername";
-            this.textusername.Size = new System.Drawing.Size(249, 40);
+            this.textusername.Size = new System.Drawing.Size(249, 37);
             this.textusername.TabIndex = 2;
+            this.textusername.Enter += new System.EventHandler(this.button1_Click);
             // 
             // textpassword
             // 
             this.textpassword.BackColor = System.Drawing.Color.Gainsboro;
             this.textpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textpassword.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textpassword.Location = new System.Drawing.Point(81, 266);
-            this.textpassword.Multiline = true;
+            this.textpassword.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Bold);
+            this.textpassword.Location = new System.Drawing.Point(68, 269);
             this.textpassword.Name = "textpassword";
             this.textpassword.PasswordChar = '•';
-            this.textpassword.Size = new System.Drawing.Size(249, 40);
+            this.textpassword.Size = new System.Drawing.Size(249, 37);
             this.textpassword.TabIndex = 4;
+            this.textpassword.Enter += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(78, 237);
+            this.label3.Location = new System.Drawing.Point(65, 240);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 17);
             this.label3.TabIndex = 3;
@@ -98,18 +98,18 @@ namespace guesswho
             // 
             this.textpasswordconfirm.BackColor = System.Drawing.Color.Gainsboro;
             this.textpasswordconfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textpasswordconfirm.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textpasswordconfirm.Location = new System.Drawing.Point(80, 368);
-            this.textpasswordconfirm.Multiline = true;
+            this.textpasswordconfirm.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Bold);
+            this.textpasswordconfirm.Location = new System.Drawing.Point(67, 371);
             this.textpasswordconfirm.Name = "textpasswordconfirm";
             this.textpasswordconfirm.PasswordChar = '•';
-            this.textpasswordconfirm.Size = new System.Drawing.Size(249, 40);
+            this.textpasswordconfirm.Size = new System.Drawing.Size(249, 37);
             this.textpasswordconfirm.TabIndex = 6;
+            this.textpasswordconfirm.Enter += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(78, 335);
+            this.label4.Location = new System.Drawing.Point(65, 338);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(121, 17);
             this.label4.TabIndex = 5;
@@ -118,7 +118,7 @@ namespace guesswho
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(200, 424);
+            this.checkBox1.Location = new System.Drawing.Point(187, 427);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(129, 21);
             this.checkBox1.TabIndex = 7;
@@ -133,7 +133,7 @@ namespace guesswho
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(81, 463);
+            this.button1.Location = new System.Drawing.Point(68, 466);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(248, 57);
             this.button1.TabIndex = 8;
@@ -153,11 +153,11 @@ namespace guesswho
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Location = new System.Drawing.Point(124, 544);
+            this.label6.Location = new System.Drawing.Point(147, 542);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(176, 17);
+            this.label6.Size = new System.Drawing.Size(99, 17);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Already Have an Account?";
+            this.label6.Text = "Už máte účet?";
             this.label6.Click += new System.EventHandler(this.ist);
             // 
             // Rgst
@@ -165,7 +165,7 @@ namespace guesswho
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(426, 657);
+            this.ClientSize = new System.Drawing.Size(408, 610);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
@@ -176,7 +176,7 @@ namespace guesswho
             this.Controls.Add(this.textusername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Rgst";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";

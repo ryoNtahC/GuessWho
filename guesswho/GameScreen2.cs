@@ -16,18 +16,22 @@ namespace guesswho
 {
     public partial class GameScreen2 : Form
     {
-        int ciselko;
+        int ciselko3;
         public GameScreen2()
         {
             InitializeComponent();
             nacitanie_obrazkov();
-            ciselko = new Random().Next(0, 23);
-            tvojhrac.ImageLocation = pandrlaci[ciselko];
+            tvojhrac.ImageLocation = pandrlaci[GameScreen.ciselkoposli];
             this.WindowState = FormWindowState.Maximized;
-            nacitanie_vlastnosti();
+            ciselko3 = GameScreen.ciselko1;
+            textBox1.Text = GameScreen.panacikovia[ciselko3].Meno;
+            textBox1.SendToBack();
+            
 
         }
-        List<Panacik> panacikovia = new List<Panacik>();
+
+   
+        
         string[] pandrlaci =
         {
                 "https://i.ibb.co/8DqFHjR/fotor-ai-20230510163746.png",
@@ -82,23 +86,7 @@ namespace guesswho
                 "https://i.ibb.co/YyZc5Z4/popoluska.png",
                 "https://i.ibb.co/TT5spW6/makovicka.jpg",
         };
-        private void nacitanie_vlastnosti()
-        {
-            for (int i = 0; i < 25; i++)
-            {
-                int idecko = i;
-                MySqlConnection connection = new MySqlConnection("SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c43guesswho;UID=c43budos;PASSWORD=BziBy_aU7");
-                connection.Open();
-                MySqlCommand cmd1 = new MySqlCommand("Select Meno, Pohlavie, Vlasy, Oci, Pokryvka, Doplnok, Fuzy from hrac2 where Id=@id", connection);
-                cmd1.Parameters.AddWithValue("id", idecko);
-                MySqlDataReader reader1;
-                reader1 = cmd1.ExecuteReader();
-                if (reader1.Read())
-                {
-                    panacikovia.Add(new Panacik(reader1["Meno"].ToString(), reader1["Pohlavie"].ToString(), reader1["Vlasy"].ToString(), reader1["Oci"].ToString(), reader1["Pokryvka"].ToString(), reader1["Doplnok"].ToString(), reader1["Fuzy"].ToString()));
-                }
-            }
-        }
+        
         private void nacitanie_obrazkov()
         {
             hrac1_1.ImageLocation = pandrlaci[0];
@@ -499,154 +487,190 @@ namespace guesswho
         private void hrac1_1_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[0].Meno + "\n" + "Pohlavie: " + panacikovia[0].Pohlavie + "\n" + "Vlasy: " + panacikovia[0].Vlasy + "\n" + "Oči: " + panacikovia[0].Oci + "\n" + "Pokrývka: " + panacikovia[0].Pokryvka + "\n" + "Doplnok: " + panacikovia[0].Doplnok + "\n" + "Fúzy: " + panacikovia[0].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[0].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[0].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[0].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[0].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[0].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[0].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[0].Fuzy;
         }
 
         private void hrac1_2_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[1].Meno + "\n" + "Pohlavie: " + panacikovia[1].Pohlavie + "\n" + "Vlasy: " + panacikovia[1].Vlasy + "\n" + "Oči: " + panacikovia[1].Oci + "\n" + "Pokrývka: " + panacikovia[1].Pokryvka + "\n" + "Doplnok: " + panacikovia[1].Doplnok + "\n" + "Fúzy: " + panacikovia[1].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[1].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[1].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[1].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[1].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[1].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[1].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[1].Fuzy;
         }
 
         private void hrac1_3_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[2].Meno + "\n" + "Pohlavie: " + panacikovia[2].Pohlavie + "\n" + "Vlasy: " + panacikovia[2].Vlasy + "\n" + "Oči: " + panacikovia[2].Oci + "\n" + "Pokrývka: " + panacikovia[2].Pokryvka + "\n" + "Doplnok: " + panacikovia[2].Doplnok + "\n" + "Fúzy: " + panacikovia[2].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[2].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[2].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[2].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[2].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[2].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[2].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[2].Fuzy;
         }
 
         private void hrac1_4_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[3].Meno + "\n" + "Pohlavie: " + panacikovia[3].Pohlavie + "\n" + "Vlasy: " + panacikovia[3].Vlasy + "\n" + "Oči: " + panacikovia[3].Oci + "\n" + "Pokrývka: " + panacikovia[3].Pokryvka + "\n" + "Doplnok: " + panacikovia[3].Doplnok + "\n" + "Fúzy: " + panacikovia[3].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[3].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[3].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[3].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[3].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[3].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[3].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[3].Fuzy;
         }
 
         private void hrac1_5_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[4].Meno + "\n" + "Pohlavie: " + panacikovia[4].Pohlavie + "\n" + "Vlasy: " + panacikovia[4].Vlasy + "\n" + "Oči: " + panacikovia[4].Oci + "\n" + "Pokrývka: " + panacikovia[4].Pokryvka + "\n" + "Doplnok: " + panacikovia[4].Doplnok + "\n" + "Fúzy: " + panacikovia[4].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[4].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[4].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[4].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[4].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[4].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[4].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[4].Fuzy;
         }
 
         private void hrac1_6_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[5].Meno + "\n" + "Pohlavie: " + panacikovia[5].Pohlavie + "\n" + "Vlasy: " + panacikovia[5].Vlasy + "\n" + "Oči: " + panacikovia[5].Oci + "\n" + "Pokrývka: " + panacikovia[5].Pokryvka + "\n" + "Doplnok: " + panacikovia[5].Doplnok + "\n" + "Fúzy: " + panacikovia[5].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[5].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[5].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[5].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[5].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[5].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[5].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[5].Fuzy;
         }
 
         private void hrac1_7_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[6].Meno + "\n" + "Pohlavie: " + panacikovia[6].Pohlavie + "\n" + "Vlasy: " + panacikovia[6].Vlasy + "\n" + "Oči: " + panacikovia[6].Oci + "\n" + "Pokrývka: " + panacikovia[6].Pokryvka + "\n" + "Doplnok: " + panacikovia[6].Doplnok + "\n" + "Fúzy: " + panacikovia[6].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[6].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[6].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[6].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[6].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[6].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[6].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[6].Fuzy;
         }
 
         private void hrac1_8_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[7].Meno + "\n" + "Pohlavie: " + panacikovia[7].Pohlavie + "\n" + "Vlasy: " + panacikovia[7].Vlasy + "\n" + "Oči: " + panacikovia[7].Oci + "\n" + "Pokrývka: " + panacikovia[7].Pokryvka + "\n" + "Doplnok: " + panacikovia[7].Doplnok + "\n" + "Fúzy: " + panacikovia[7].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[7].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[7].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[7].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[7].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[7].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[7].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[7].Fuzy;
         }
 
         private void hrac1_9_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[8].Meno + "\n" + "Pohlavie: " + panacikovia[8].Pohlavie + "\n" + "Vlasy: " + panacikovia[8].Vlasy + "\n" + "Oči: " + panacikovia[8].Oci + "\n" + "Pokrývka: " + panacikovia[8].Pokryvka + "\n" + "Doplnok: " + panacikovia[8].Doplnok + "\n" + "Fúzy: " + panacikovia[8].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[8].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[8].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[8].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[8].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[8].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[8].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[8].Fuzy;
         }
 
         private void hrac1_10_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[9].Meno + "\n" + "Pohlavie: " + panacikovia[9].Pohlavie + "\n" + "Vlasy: " + panacikovia[9].Vlasy + "\n" + "Oči: " + panacikovia[9].Oci + "\n" + "Pokrývka: " + panacikovia[9].Pokryvka + "\n" + "Doplnok: " + panacikovia[9].Doplnok + "\n" + "Fúzy: " + panacikovia[9].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[9].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[9].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[9].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[9].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[9].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[9].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[9].Fuzy;
         }
 
         private void hrac1_11_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[10].Meno + "\n" + "Pohlavie: " + panacikovia[10].Pohlavie + "\n" + "Vlasy: " + panacikovia[10].Vlasy + "\n" + "Oči: " + panacikovia[10].Oci + "\n" + "Pokrývka: " + panacikovia[10].Pokryvka + "\n" + "Doplnok: " + panacikovia[10].Doplnok + "\n" + "Fúzy: " + panacikovia[10].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[10].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[10].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[10].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[10].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[10].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[10].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[10].Fuzy;
         }
 
         private void hrac1_12_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[11].Meno + "\n" + "Pohlavie: " + panacikovia[11].Pohlavie + "\n" + "Vlasy: " + panacikovia[11].Vlasy + "\n" + "Oči: " + panacikovia[11].Oci + "\n" + "Pokrývka: " + panacikovia[11].Pokryvka + "\n" + "Doplnok: " + panacikovia[11].Doplnok + "\n" + "Fúzy: " + panacikovia[11].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[11].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[11].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[11].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[11].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[11].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[11].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[11].Fuzy;
         }
 
         private void hrac1_13_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[12].Meno + "\n" + "Pohlavie: " + panacikovia[12].Pohlavie + "\n" + "Vlasy: " + panacikovia[12].Vlasy + "\n" + "Oči: " + panacikovia[12].Oci + "\n" + "Pokrývka: " + panacikovia[12].Pokryvka + "\n" + "Doplnok: " + panacikovia[12].Doplnok + "\n" + "Fúzy: " + panacikovia[12].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[12].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[12].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[12].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[12].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[12].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[12].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[12].Fuzy;
         }
 
         private void hrac1_14_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[13].Meno + "\n" + "Pohlavie: " + panacikovia[13].Pohlavie + "\n" + "Vlasy: " + panacikovia[13].Vlasy + "\n" + "Oči: " + panacikovia[13].Oci + "\n" + "Pokrývka: " + panacikovia[13].Pokryvka + "\n" + "Doplnok: " + panacikovia[13].Doplnok + "\n" + "Fúzy: " + panacikovia[13].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[13].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[13].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[13].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[13].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[13].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[13].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[13].Fuzy;
         }
 
         private void hrac1_15_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[14].Meno + "\n" + "Pohlavie: " + panacikovia[14].Pohlavie + "\n" + "Vlasy: " + panacikovia[14].Vlasy + "\n" + "Oči: " + panacikovia[14].Oci + "\n" + "Pokrývka: " + panacikovia[14].Pokryvka + "\n" + "Doplnok: " + panacikovia[14].Doplnok + "\n" + "Fúzy: " + panacikovia[14].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[14].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[14].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[14].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[14].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[14].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[14].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[14].Fuzy;
         }
 
         private void hrac1_16_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[15].Meno + "\n" + "Pohlavie: " + panacikovia[15].Pohlavie + "\n" + "Vlasy: " + panacikovia[15].Vlasy + "\n" + "Oči: " + panacikovia[15].Oci + "\n" + "Pokrývka: " + panacikovia[15].Pokryvka + "\n" + "Doplnok: " + panacikovia[15].Doplnok + "\n" + "Fúzy: " + panacikovia[15].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[15].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[15].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[15].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[15].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[15].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[15].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[15].Fuzy;
         }
 
         private void hrac1_17_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[16].Meno + "\n" + "Pohlavie: " + panacikovia[16].Pohlavie + "\n" + "Vlasy: " + panacikovia[16].Vlasy + "\n" + "Oči: " + panacikovia[16].Oci + "\n" + "Pokrývka: " + panacikovia[16].Pokryvka + "\n" + "Doplnok: " + panacikovia[16].Doplnok + "\n" + "Fúzy: " + panacikovia[16].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[16].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[16].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[16].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[16].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[16].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[16].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[16].Fuzy;
         }
 
         private void hrac1_18_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[17].Meno + "\n" + "Pohlavie: " + panacikovia[17].Pohlavie + "\n" + "Vlasy: " + panacikovia[17].Vlasy + "\n" + "Oči: " + panacikovia[17].Oci + "\n" + "Pokrývka: " + panacikovia[17].Pokryvka + "\n" + "Doplnok: " + panacikovia[17].Doplnok + "\n" + "Fúzy: " + panacikovia[17].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[17].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[17].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[17].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[17].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[17].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[17].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[17].Fuzy;
         }
 
         private void hrac1_19_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[18].Meno + "\n" + "Pohlavie: " + panacikovia[18].Pohlavie + "\n" + "Vlasy: " + panacikovia[18].Vlasy + "\n" + "Oči: " + panacikovia[18].Oci + "\n" + "Pokrývka: " + panacikovia[18].Pokryvka + "\n" + "Doplnok: " + panacikovia[18].Doplnok + "\n" + "Fúzy: " + panacikovia[18].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[18].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[18].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[18].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[18].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[18].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[18].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[18].Fuzy;
         }
 
         private void hrac1_20_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[19].Meno + "\n" + "Pohlavie: " + panacikovia[19].Pohlavie + "\n" + "Vlasy: " + panacikovia[19].Vlasy + "\n" + "Oči: " + panacikovia[19].Oci + "\n" + "Pokrývka: " + panacikovia[19].Pokryvka + "\n" + "Doplnok: " + panacikovia[19].Doplnok + "\n" + "Fúzy: " + panacikovia[19].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[19].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[19].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[19].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[19].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[19].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[19].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[19].Fuzy;
         }
 
         private void hrac1_21_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[20].Meno + "\n" + "Pohlavie: " + panacikovia[20].Pohlavie + "\n" + "Vlasy: " + panacikovia[20].Vlasy + "\n" + "Oči: " + panacikovia[20].Oci + "\n" + "Pokrývka: " + panacikovia[20].Pokryvka + "\n" + "Doplnok: " + panacikovia[20].Doplnok + "\n" + "Fúzy: " + panacikovia[20].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[20].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[20].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[20].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[20].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[20].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[20].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[20].Fuzy;
         }
 
         private void hrac1_22_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[21].Meno + "\n" + "Pohlavie: " + panacikovia[21].Pohlavie + "\n" + "Vlasy: " + panacikovia[21].Vlasy + "\n" + "Oči: " + panacikovia[21].Oci + "\n" + "Pokrývka: " + panacikovia[21].Pokryvka + "\n" + "Doplnok: " + panacikovia[21].Doplnok + "\n" + "Fúzy: " + panacikovia[21].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[21].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[21].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[21].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[21].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[21].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[21].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[21].Fuzy;
         }
 
         private void hrac1_23_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[22].Meno + "\n" + "Pohlavie: " + panacikovia[22].Pohlavie + "\n" + "Vlasy: " + panacikovia[22].Vlasy + "\n" + "Oči: " + panacikovia[22].Oci + "\n" + "Pokrývka: " + panacikovia[22].Pokryvka + "\n" + "Doplnok: " + panacikovia[22].Doplnok + "\n" + "Fúzy: " + panacikovia[22].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[22].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[22].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[22].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[22].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[22].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[22].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[22].Fuzy;
         }
 
         private void hrac1_24_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[23].Meno + "\n" + "Pohlavie: " + panacikovia[23].Pohlavie + "\n" + "Vlasy: " + panacikovia[23].Vlasy + "\n" + "Oči: " + panacikovia[23].Oci + "\n" + "Pokrývka: " + panacikovia[23].Pokryvka + "\n" + "Doplnok: " + panacikovia[23].Doplnok + "\n" + "Fúzy: " + panacikovia[23].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[23].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[23].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[23].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[23].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[23].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[23].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[23].Fuzy;
         }
 
         private void tvojhrac_Click(object sender, EventArgs e)
         {
 
-            vlastnosti.Text = "Meno: " + panacikovia[ciselko].Meno + "\n" + "Pohlavie: " + panacikovia[ciselko].Pohlavie + "\n" + "Vlasy: " + panacikovia[ciselko].Vlasy + "\n" + "Oči: " + panacikovia[ciselko].Oci + "\n" + "Pokrývka: " + panacikovia[ciselko].Pokryvka + "\n" + "Doplnok: " + panacikovia[ciselko].Doplnok + "\n" + "Fúzy: " + panacikovia[ciselko].Fuzy;
+            vlastnosti.Text = "Meno: " + GameScreen.panacikovia[GameScreen.ciselkoposli].Meno + "\n" + "Pohlavie: " + GameScreen.panacikovia[GameScreen.ciselkoposli].Pohlavie + "\n" + "Vlasy: " + GameScreen.panacikovia[GameScreen.ciselkoposli].Vlasy + "\n" + "Oči: " + GameScreen.panacikovia[GameScreen.ciselkoposli].Oci + "\n" + "Pokrývka: " + GameScreen.panacikovia[GameScreen.ciselkoposli].Pokryvka + "\n" + "Doplnok: " + GameScreen.panacikovia[GameScreen.ciselkoposli].Doplnok + "\n" + "Fúzy: " + GameScreen.panacikovia[GameScreen.ciselkoposli].Fuzy;
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == textBox2.Text)
+            {
+                this.Hide();
+                win2 vyhraj = new win2();
+                vyhraj.Closed += (s, args) => this.Close();
+                vyhraj.Show();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Nope", "Zlá voľba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Prechod2 prechadzam = Application.OpenForms.OfType<Prechod2>().FirstOrDefault();
+                if (prechadzam != null)
+                {
+                    prechadzam.Show();
+                }
+                else
+                {
+                    prechadzam = new Prechod2();
+                    prechadzam.Show();
+                }
+                textBox2.Text = "";
+                this.Hide();
+            }
+        }
+
+
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
