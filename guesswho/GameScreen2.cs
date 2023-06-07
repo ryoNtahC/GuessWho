@@ -24,7 +24,7 @@ namespace guesswho
             InitializeComponent();
             naplnenie_obrazkov();
             nacitanie_obrazkov();
-            tvojhrac.ImageLocation = pandrlaci[GameScreen.ciselkoposli];
+            tvojhrac.ImageLocation = pandrlaci[GameScreen.ciselkoposli+1];
             this.WindowState = FormWindowState.Maximized;
             ciselko3 = GameScreen.ciselko1;
             textBox1.Text = GameScreen.panacikovia[ciselko3].Meno;
@@ -602,7 +602,7 @@ namespace guesswho
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == textBox2.Text)
+            if (textBox2.Text == textBox1.Text)
             {
                 this.Hide();
                 win2 vyhraj = new win2();

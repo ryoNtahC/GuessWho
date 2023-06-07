@@ -60,14 +60,14 @@ namespace guesswho
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
-                if (checkBox1.Checked)
-                {
-                    textpassword.PasswordChar = '\0';
-                }
-                else
-                {
-                    textpassword.PasswordChar = '•';
-                }
+            if (checkBox1.Checked)
+            {
+                textpassword.PasswordChar = '\0';
+            }
+            else
+            {
+                textpassword.PasswordChar = '•';
+            }
         }
     }
 }

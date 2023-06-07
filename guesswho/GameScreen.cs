@@ -27,7 +27,7 @@ namespace guesswho
             naplnenie_obrazkov();
             nacitanie_obrazkov();
             ciselko = new Random().Next(1, 24);
-            tvojhrac.ImageLocation = pandrlaci[ciselko];
+            tvojhrac.ImageLocation = pandrlaci[ciselko+1];
             this.WindowState = FormWindowState.Maximized;
             nacitanie_vlastnosti();
             nacitanie_vyhry();
