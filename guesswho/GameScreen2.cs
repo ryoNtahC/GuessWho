@@ -20,6 +20,7 @@ namespace guesswho
         public GameScreen2()
         {
             InitializeComponent();
+            naplnenie_obrazkov();
             nacitanie_obrazkov();
             tvojhrac.ImageLocation = pandrlaci[GameScreen.ciselkoposli];
             this.WindowState = FormWindowState.Maximized;
@@ -30,35 +31,16 @@ namespace guesswho
 
         }
 
-   
-        
-        string[] pandrlaci =
+
+
+        List<string> pandrlaci = new List<string>();
+        private void naplnenie_obrazkov()
         {
-                "https://i.ibb.co/8DqFHjR/fotor-ai-20230510163746.png",
-                "https://i.ibb.co/RPsXzPg/rakosnicek2.jpg",
-                "https://i.ibb.co/JqtfzZ2/ferdo.jpg",
-                "https://i.ibb.co/F5n7BJC/fotor-ai-20230510165126.png",
-                "https://i.ibb.co/cwT9v4V/fotor-ai-20230510165456.jpg",
-                "https://i.ibb.co/VLXQFNP/krtko3.jpg",
-                "https://i.ibb.co/QcWN1hf/fotor-ai-20230510171217.png",
-                "https://i.ibb.co/1dCMQG7/fotor-ai-20230510171528.png",
-                "https://i.ibb.co/dKR7yvD/fotor-ai-2023051017293.jpg",
-                "https://i.ibb.co/L1NZBjY/pat.png",
-                "https://i.ibb.co/805CCvn/mat.jpg",
-                "https://i.ibb.co/H4bmFmL/bob.jpg",
-                "https://i.ibb.co/02yVVqd/bobek.jpg",
-                "https://i.ibb.co/D78CnWB/fotor-ai-20230510194422.jpg",
-                "https://i.ibb.co/RpBrG6F/maxipesfik.jpg",
-                "https://i.ibb.co/sRxZ1g8/fotor-ai-20230510192641.png",
-                "https://i.ibb.co/4PXQ3tj/fotor-ai-20230510191324.png",
-                "https://i.ibb.co/g7TJqKx/fotor-ai-20230502191017.jpg",
-                "https://i.ibb.co/RC8V6QJ/fotor-ai-202305101917.png",
-                "https://i.ibb.co/604542Q/fotor-ai-20230510195647.png",
-                "https://i.ibb.co/GW6704y/fotor-ai-2023051018390.jpg",
-                "https://i.ibb.co/1qLpTCy/perinbaba2.jpg",
-                "https://i.ibb.co/3N2LThx/fotor-ai-20230510181053.png",
-                "https://i.ibb.co/NFPGCcK/fotor-ai-20230510175316.jpg",
-        };
+            for(int i = 1; i < 25; i++)
+            {
+                pandrlaci[i] = "guesswho/obrazky/normalne/obrazok" + i + ".png";
+            }
+        }
         string[] preciarknuty =
         {
                 "https://i.ibb.co/pQQ37bL/rumcajs.png",
@@ -89,30 +71,30 @@ namespace guesswho
         
         private void nacitanie_obrazkov()
         {
-            hrac1_1.ImageLocation = pandrlaci[0];
-            hrac1_2.ImageLocation = pandrlaci[1];
-            hrac1_3.ImageLocation = pandrlaci[2];
-            hrac1_4.ImageLocation = pandrlaci[3];
-            hrac1_5.ImageLocation = pandrlaci[4];
-            hrac1_6.ImageLocation = pandrlaci[5];
-            hrac1_7.ImageLocation = pandrlaci[6];
-            hrac1_8.ImageLocation = pandrlaci[7];
-            hrac1_9.ImageLocation = pandrlaci[8];
-            hrac1_10.ImageLocation = pandrlaci[9];
-            hrac1_11.ImageLocation = pandrlaci[10];
-            hrac1_12.ImageLocation = pandrlaci[11];
-            hrac1_13.ImageLocation = pandrlaci[12];
-            hrac1_14.ImageLocation = pandrlaci[13];
-            hrac1_15.ImageLocation = pandrlaci[14];
-            hrac1_16.ImageLocation = pandrlaci[15];
-            hrac1_17.ImageLocation = pandrlaci[16];
-            hrac1_18.ImageLocation = pandrlaci[17];
-            hrac1_19.ImageLocation = pandrlaci[18];
-            hrac1_20.ImageLocation = pandrlaci[19];
-            hrac1_21.ImageLocation = pandrlaci[20];
-            hrac1_22.ImageLocation = pandrlaci[21];
-            hrac1_23.ImageLocation = pandrlaci[22];
-            hrac1_24.ImageLocation = pandrlaci[23];
+            hrac1_1.ImageLocation = pandrlaci[1];
+            hrac1_2.ImageLocation = pandrlaci[2];
+            hrac1_3.ImageLocation = pandrlaci[3];
+            hrac1_4.ImageLocation = pandrlaci[4];
+            hrac1_5.ImageLocation = pandrlaci[5];
+            hrac1_6.ImageLocation = pandrlaci[6];
+            hrac1_7.ImageLocation = pandrlaci[7];
+            hrac1_8.ImageLocation = pandrlaci[8];
+            hrac1_9.ImageLocation = pandrlaci[9];
+            hrac1_10.ImageLocation = pandrlaci[10];
+            hrac1_11.ImageLocation = pandrlaci[11];
+            hrac1_12.ImageLocation = pandrlaci[12];
+            hrac1_13.ImageLocation = pandrlaci[13];
+            hrac1_14.ImageLocation = pandrlaci[14];
+            hrac1_15.ImageLocation = pandrlaci[15];
+            hrac1_16.ImageLocation = pandrlaci[16];
+            hrac1_17.ImageLocation = pandrlaci[17];
+            hrac1_18.ImageLocation = pandrlaci[18];
+            hrac1_19.ImageLocation = pandrlaci[19];
+            hrac1_20.ImageLocation = pandrlaci[20];
+            hrac1_21.ImageLocation = pandrlaci[21];
+            hrac1_22.ImageLocation = pandrlaci[22];
+            hrac1_23.ImageLocation = pandrlaci[23];
+            hrac1_24.ImageLocation = pandrlaci[24];
 
         }
 
