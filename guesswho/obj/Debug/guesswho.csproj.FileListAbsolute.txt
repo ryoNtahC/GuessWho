@@ -206,3 +206,4 @@ C:\Users\admin\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Lgn2.resour
 C:\Users\admin\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Rgst2.resources
 C:\Users\admin\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.win1.resources
 C:\Users\admin\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.win2.resources
+C:\Users\admin\Documents\GitHub\GuessWho\guesswho\obj\Debug\guesswho.Form2.resources

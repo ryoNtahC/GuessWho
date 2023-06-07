@@ -33,5 +33,18 @@ namespace guesswho
             register.Closed += (s, args) => this.Close();
             register.Show();
         }
+
+        private void Choose_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 praca = new Form2();
+            praca.Closed += (s, args) => this.Close();
+            praca.Show();
+        }
     }
 }

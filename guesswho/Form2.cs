@@ -10,17 +10,19 @@ using System.Windows.Forms;
 
 namespace guesswho
 {
-    public partial class win1 : Form
+    public partial class Form2 : Form
     {
-        public win1()
+        public Form2()
         {
             InitializeComponent();
-            label1.Text = Lgn.tbx1.Text + " Vyhral!";
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Choose spat = new Choose();
+            spat.Closed += (s, args) => this.Close();
+            spat.Show();
         }
     }
 }
