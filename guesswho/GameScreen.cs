@@ -69,7 +69,7 @@ namespace guesswho
         }
         private void nacitanie_vyhry()
         {
-            ciselko2 = new Random().Next(0, 23);
+            ciselko2 = new Random().Next(1, 24);
             ciselko1 = ciselko;
             ciselkoposli = ciselko2;
         }
