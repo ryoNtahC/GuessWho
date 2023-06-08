@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\guesswho"
+    "\\guesswho",
+    "\\guesswho\\guesswho"
   ],
-  "SelectedNode": "\\guesswho\\Ovlad.cs",
+  "SelectedNode": "\\guesswho\\guesswho\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
